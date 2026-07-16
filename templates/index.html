@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Traffic Control</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .roads {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .road {
+            width: 180px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #333;
+            transition: background 0.5s, box-shadow 0.5s;
+        }
+
+        .road h2 {
+            margin-bottom: 10px;
+        }
+
+        .count {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* 🔴 Red light */
+        .red {
+            background: #5a1a1a;
+        }
+
+        /* 🟢 Green light with glow */
+        .green {
+            background: #1e7f34;
+            box-shadow: 0 0 20px #1eff6a;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Glow animation */
+        @keyframes pulse {
+            0%   { box-shadow: 0 0 10px #1eff6a; }
+            50%  { box-shadow: 0 0 30px #1eff6a; }
+            100% { box-shadow: 0 0 10px #1eff6a; }
+        }
+
+        .timer {
+            margin-top: 30px;
+            font-size: 26px;
+            color: #ffd700;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🚦 Smart Traffic Control — Live Dashboard</h1>
+    <div class="subtitle">YOLO + AI Decision + Real-Time Web Interface</div>
+
+    <div class="roads">
+        <div id="N" class="road red">
+            <h2>North</h2>
+            <div class="count" id="countN">0</div>
+        </div>
+
+        <div id="E" class="road red">
+            <h2>East</h2>
+            <div class="count" id="countE">0</div>
+        </div>
+
+        <div id="S" class="road red">
+            <h2>South</h2>
+            <div class="count" id="countS">0</div>
+        </div>
+
+        <div id="W" class="road red">
+            <h2>West</h2>
+            <div class="count" id="countW">0</div>
+        </div>
+    </div>
+
+    <div class="timer">
+        ⏱ Green Remaining: <span id="timer">0</span> seconds
+    </div>
+
+    <script>
+        function updateDashboard() {
+            fetch("/status")
+                .then(res => res.json())
+                .then(data => {
+                    const counts = data.counts;
+                    const green = data.green_lane;
+                    const remaining = data.green_remaining;
+
+                    // Update counts
+                    document.getElementById("countN").innerText = counts.N;
+                    document.getElementById("countE").innerText = counts.E;
+                    document.getElementById("countS").innerText = counts.S;
+                    document.getElementById("countW").innerText = counts.W;
+
+                    // Update lights
+                    ["N","E","S","W"].forEach(lane => {
+                        document.getElementById(lane).className =
+                            "road " + (lane === green ? "green" : "red");
+                    });
+
+                    // Update timer
+                    const timerEl = document.getElementById("timer");
+                    timerEl.innerText = remaining;
+
+                    // Blink when time is low
+                    if (remaining <= 3) {
+                        timerEl.classList.add("blink");
+                    } else {
+                        timerEl.classList.remove("blink");
+                    }
+                });
+        }
+
+        setInterval(updateDashboard, 1000);
+        updateDashboard();
+    </script>
+
+</body>
+</html>

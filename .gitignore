@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Large media files (keep git repository lightweight)
+*.mp4
+*.zip
+*.pt
+*.pth
+
+# IDE configurations
+.vscode/
+.idea/
