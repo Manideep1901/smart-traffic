@@ -1,0 +1,12 @@
+<configuration>
+    <input>
+        <net-file value="multi_junction.net.xml"/>
+        <route-files value="multi_junction.rou.xml"/>
+        <additional-files value="multi_junction.add.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+        <step-length value="0.1"/>
+    </time>
+</configuration>

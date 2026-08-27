@@ -1,0 +1,69 @@
+<additional>
+
+    <!-- Traffic light program for Junction J1 -->
+    <tlLogic id="J1" type="static" programID="1" offset="0">
+        <!-- Phase 0: NS Green -->
+        <phase duration="25" state="GggrrrGggrrr"/>
+        <!-- Phase 1: NS Yellow -->
+        <phase duration="3"  state="yyyrrryyyrrr"/>
+        <!-- Phase 2: All Red -->
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+        <!-- Phase 3: EW Green -->
+        <phase duration="25" state="rrrGggrrrGgg"/>
+        <!-- Phase 4: EW Yellow -->
+        <phase duration="3"  state="rrryyyrrryyy"/>
+        <!-- Phase 5: All Red -->
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+    <!-- Traffic light program for Junction J2 -->
+    <tlLogic id="J2" type="static" programID="1" offset="0">
+        <phase duration="25" state="GggrrrGggrrr"/>
+        <phase duration="3"  state="yyyrrryyyrrr"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+        <phase duration="25" state="rrrGggrrrGgg"/>
+        <phase duration="3"  state="rrryyyrrryyy"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+    <!-- Traffic light program for Junction J3 -->
+    <tlLogic id="J3" type="static" programID="1" offset="0">
+        <phase duration="25" state="GggrrrGggrrr"/>
+        <phase duration="3"  state="yyyrrryyyrrr"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+        <phase duration="25" state="rrrGggrrrGgg"/>
+        <phase duration="3"  state="rrryyyrrryyy"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+    <!-- Traffic light program for Junction J4 -->
+    <tlLogic id="J4" type="static" programID="1" offset="0">
+        <phase duration="25" state="GggrrrGggrrr"/>
+        <phase duration="3"  state="yyyrrryyyrrr"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+        <phase duration="25" state="rrrGggrrrGgg"/>
+        <phase duration="3"  state="rrryyyrrryyy"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+    <!-- Traffic light program for Junction J5 -->
+    <tlLogic id="J5" type="static" programID="1" offset="0">
+        <phase duration="25" state="GggrrrGggrrr"/>
+        <phase duration="3"  state="yyyrrryyyrrr"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+        <phase duration="25" state="rrrGggrrrGgg"/>
+        <phase duration="3"  state="rrryyyrrryyy"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+    <!-- Traffic light program for Junction J6 -->
+    <tlLogic id="J6" type="static" programID="1" offset="0">
+        <phase duration="25" state="GggrrrGggrrr"/>
+        <phase duration="3"  state="yyyrrryyyrrr"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+        <phase duration="25" state="rrrGggrrrGgg"/>
+        <phase duration="3"  state="rrryyyrrryyy"/>
+        <phase duration="1"  state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+</additional>

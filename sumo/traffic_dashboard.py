@@ -7,22 +7,33 @@ from datetime import datetime
 
 API_BASE = "http://127.0.0.1:5000"
 
-st.set_page_config(layout="wide", page_title="Traffic Control Dashboard")
+st.set_page_config(layout="wide", page_title="Multi-Junction Smart Traffic Dashboard")
 
-st.title("Smart Traffic Control — Live Dashboard")
+st.title("🚦 Smart Traffic Multi-Junction Control — Live Dashboard")
 
-# placeholders
-col1, col2 = st.columns([2,3])
+# Top controls
+col_ctrl1, col_ctrl2 = st.columns([2, 1])
+with col_ctrl1:
+    junction_option = st.selectbox(
+        "Select Junction / View",
+        ["Network Overview (All)", "J1", "J2", "J3", "J4", "J5", "J6", "C"]
+    )
+
+with col_ctrl2:
+    history_len = st.slider("History points", min_value=20, max_value=500, value=100, step=20)
+
+# Layout placeholders
+col1, col2 = st.columns([2, 3])
 
 with col1:
-    st.subheader("Intersection Status")
+    st.subheader("Signal & Queue Status")
     phase_box = st.empty()
     countdown_box = st.empty()
     metrics_box = st.empty()
     serve_table = st.empty()
 
 with col2:
-    st.subheader("Lane Densities & Charts")
+    st.subheader("Lane Densities & Historical Trends")
     counts_cols = st.columns(4)
     pN = counts_cols[0].empty()
     pE = counts_cols[1].empty()
@@ -30,15 +41,14 @@ with col2:
     pW = counts_cols[3].empty()
 
     chart_placeholder = st.empty()
-    history_len = st.slider("History points", min_value=20, max_value=500, value=120, step=20)
 
-# log area
-st.subheader("Recent Decisions")
+# Log Area
+st.subheader("Recent Controller Decisions")
 log_placeholder = st.empty()
 
-# data storage in session state
+# Session State for History
 if "history" not in st.session_state:
-    st.session_state.history = []  # list of dicts: timestamp, N,E,S,W,phase,green,start,end
+    st.session_state.history = []
 
 REFRESH_SEC = 1.0
 
@@ -50,66 +60,78 @@ def get_status():
     except Exception:
         return None
 
-# main update loop
+# Main dashboard refresh loop
 while True:
     status = get_status()
     if status is None:
-        st.warning("No connection to controller API. Make sure controller_api.py is running.")
+        st.warning("Connecting to Controller API (http://127.0.0.1:5000)... Make sure controller_api.py is running.")
         time.sleep(1.5)
         continue
 
-    counts = status.get("counts", {"N":0,"E":0,"S":0,"W":0})
-    last_decision = status.get("last_decision", {})
+    junctions_data = status.get("junctions", {})
     ts = datetime.fromtimestamp(status.get("timestamp", time.time())).strftime("%H:%M:%S")
 
-    # update small counters
-    pN.metric("North (N)", counts.get("N",0))
-    pE.metric("East  (E)", counts.get("E",0))
-    pS.metric("South (S)", counts.get("S",0))
-    pW.metric("West  (W)", counts.get("W",0))
+    # Determine counts and decision based on selected junction
+    if junction_option == "Network Overview (All)" or not junctions_data:
+        counts = status.get("counts", {"N": 0, "E": 0, "S": 0, "W": 0})
+        last_decision = status.get("last_decision", {})
+        view_title = "Network Totals"
+    else:
+        j_info = junctions_data.get(junction_option, {})
+        counts = j_info.get("counts", {"N": 0, "E": 0, "S": 0, "W": 0})
+        last_decision = j_info.get("last_decision", {})
+        view_title = f"Junction {junction_option}"
 
-    # show current phase & countdown
+    # Update metric counters
+    pN.metric("North (N)", counts.get("N", 0))
+    pE.metric("East  (E)", counts.get("E", 0))
+    pS.metric("South (S)", counts.get("S", 0))
+    pW.metric("West  (W)", counts.get("W", 0))
+
+    # Show active phase and countdown
     phase = last_decision.get("phase", "—")
     green = last_decision.get("green", 0) or 0
-    start = last_decision.get("start_time")
-    end = last_decision.get("end_time")
+    end_time = last_decision.get("end_time")
     now_ts = time.time()
-    remaining = max(0, int(end - now_ts)) if end else 0
+    remaining = max(0, int(end_time - now_ts)) if end_time else 0
 
-    phase_box.markdown(f"**Current Phase:**  `{phase}`")
-    countdown_box.markdown(f"**Time left:**  `{remaining} s`")
+    phase_box.markdown(f"**{view_title} Serving:**  `Phase {phase}`")
+    countdown_box.markdown(f"**Green Duration Remaining:**  `{remaining} s` (Allocated: `{green} s`)")
 
-    # summary metrics
-    avg_queue = (counts.get("N",0)+counts.get("E",0)+counts.get("S",0)+counts.get("W",0))/4.0
-    metrics_box.markdown(f"- **Avg queue**: `{avg_queue:.2f}`\n- **Last update**: `{ts}`")
+    # Summary metrics
+    avg_queue = (counts.get("N", 0) + counts.get("E", 0) + counts.get("S", 0) + counts.get("W", 0)) / 4.0
+    active_j_count = len(junctions_data) if junctions_data else 1
+    metrics_box.markdown(f"- **Avg Queue**: `{avg_queue:.1f}`\n- **Active Controlled Junctions**: `{active_j_count}`\n- **Last Sync**: `{ts}`")
 
-    # record into history (only when new decision or every tick)
-    rec = {"time": ts, "N": counts.get("N",0), "E": counts.get("E",0), "S": counts.get("S",0), "W": counts.get("W",0),
-           "phase": phase, "green": green, "remaining": remaining}
+    # Record history
+    rec = {
+        "time": ts,
+        "view": junction_option,
+        "N": counts.get("N", 0),
+        "E": counts.get("E", 0),
+        "S": counts.get("S", 0),
+        "W": counts.get("W", 0),
+        "phase": phase,
+        "green": green
+    }
     st.session_state.history.append(rec)
-    # cap history length
     if len(st.session_state.history) > 2000:
         st.session_state.history = st.session_state.history[-2000:]
 
-    # build DataFrame for charts from last history_len
+    # Build DataFrame for charts
     df = pd.DataFrame(st.session_state.history[-history_len:])
-    df.index = range(len(df))
-    if not df.empty:
-        chart_df = df[["N","E","S","W"]].rename(columns={"N":"North","E":"East","S":"South","W":"West"})
+    if not df.empty and "N" in df.columns:
+        chart_df = df[["N", "E", "S", "W"]].rename(columns={"N": "North", "E": "East", "S": "South", "W": "West"})
         chart_placeholder.line_chart(chart_df)
 
-    # show last 10 decisions as table
-    recent = df[["time","phase","green","N","E","S","W"]].tail(10).iloc[::-1]
-    serve_table.table(recent)
+    # Show recent decisions table
+    if not df.empty:
+        recent = df[["time", "view", "phase", "green", "N", "E", "S", "W"]].tail(8).iloc[::-1]
+        serve_table.table(recent)
 
-    # log area (text)
-    log_lines = []
-    latest = st.session_state.history[-6:]
-    for r in latest[::-1]:
-        log_lines.append(f"{r['time']} | serve {r['phase']} for {r['green']}s | counts N{r['N']} E{r['E']} S{r['S']} W{r['W']}")
+    # Log text
+    latest = st.session_state.history[-5:]
+    log_lines = [f"{r['time']} | [{r['view']}] phase={r['phase']} ({r['green']}s) | Queues: N={r['N']} E={r['E']} S={r['S']} W={r['W']}" for r in latest[::-1]]
     log_placeholder.markdown("\n".join(log_lines))
 
-    # wait before next poll
     time.sleep(REFRESH_SEC)
-    # streamlit requires an explicit rerun for while-loops; but sleep + loop works
-    # Breaking condition if user stops the app in the browser is handled by the Streamlit run environment.
