@@ -2,21 +2,20 @@
 
     <tlLogic id="C" type="static" programID="1" offset="0">
 
-        <!-- Phase order: NS green – all red – EW green – all red -->
+        <!-- Phase order: NS green – NS yellow – EW green – EW yellow -->
 
-        <!-- NS Green -->
-        <phase duration="25" state="GGrrrrGGrrrr"/>  
+        <!-- Phase 0: NS Green (Both straight/right lane & left turn lane get GREEN) -->
+        <phase duration="25" state="GGgrrrGGgrrr"/>  
 
-        <!-- All red -->
-        <phase duration="4"  state="rrrrrrrrrrrr"/>
+        <!-- Phase 1: NS Yellow / Transition -->
+        <phase duration="3"  state="yyyrrryyyrrr"/>
 
-        <!-- EW Green -->
-        <phase duration="25" state="rrGGrrrrrrGG"/>
+        <!-- Phase 2: EW Green (Both straight/right lane & left turn lane get GREEN) -->
+        <phase duration="25" state="rrrGGgrrrGGg"/>
 
-        <!-- All red -->
-        <phase duration="4"  state="rrrrrrrrrrrr"/>
+        <!-- Phase 3: EW Yellow / Transition -->
+        <phase duration="3"  state="rrryyyrrryyy"/>
 
     </tlLogic>
 
 </additional>
-
