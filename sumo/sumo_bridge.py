@@ -115,6 +115,11 @@ def request_decision(j_id, counts):
 # Main Simulation Loop
 # -------------------------
 def run_simulation(sumo_cfg="multi_junction.sumocfg", gui=False, max_steps=200000):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    if not os.path.isabs(sumo_cfg):
+        if not os.path.exists(sumo_cfg) and os.path.exists(os.path.join(script_dir, sumo_cfg)):
+            sumo_cfg = os.path.join(script_dir, sumo_cfg)
+
     cmd_name = "sumo-gui" if gui else "sumo"
     sumo_cmd = [cmd_name, "-c", sumo_cfg]
 

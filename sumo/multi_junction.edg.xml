@@ -1,82 +1,64 @@
 <edges>
+    <!-- ========================================================= -->
+    <!-- CENTRAL HORIZONTAL HIGHWAY (3 LANES EACH DIRECTION, 70 KM/H) -->
+    <!-- ========================================================= -->
+    <edge id="W1toJ1" from="W1" to="J1" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="J1toW1" from="J1" to="W1" numLanes="3" speed="19.44" priority="3"/>
 
-    <!-- ========================================= -->
-    <!-- Internal Horizontal Corridors (Row 1 & Row 2) -->
-    <!-- ========================================= -->
-    <!-- Row 1: J1 <-> J2 <-> J3 -->
-    <edge id="J1toJ2" from="J1" to="J2" numLanes="2" speed="13.9"/>
-    <edge id="J2toJ1" from="J2" to="J1" numLanes="2" speed="13.9"/>
+    <edge id="J1toJ2" from="J1" to="J2" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="J2toJ1" from="J2" to="J1" numLanes="3" speed="19.44" priority="3"/>
 
-    <edge id="J2toJ3" from="J2" to="J3" numLanes="2" speed="13.9"/>
-    <edge id="J3toJ2" from="J3" to="J2" numLanes="2" speed="13.9"/>
+    <edge id="J2toJ3" from="J2" to="J3" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="J3toJ2" from="J3" to="J2" numLanes="3" speed="19.44" priority="3"/>
 
-    <!-- Row 2: J4 <-> J5 <-> J6 -->
-    <edge id="J4toJ5" from="J4" to="J5" numLanes="2" speed="13.9"/>
-    <edge id="J5toJ4" from="J5" to="J4" numLanes="2" speed="13.9"/>
+    <edge id="J3toE1" from="J3" to="E1" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="E1toJ3" from="E1" to="J3" numLanes="3" speed="19.44" priority="3"/>
 
-    <edge id="J5toJ6" from="J5" to="J6" numLanes="2" speed="13.9"/>
-    <edge id="J6toJ5" from="J6" to="J5" numLanes="2" speed="13.9"/>
+    <!-- ========================================================= -->
+    <!-- RIGHT VERTICAL HIGHWAY (3 LANES EACH DIRECTION, 70 KM/H)  -->
+    <!-- ========================================================= -->
+    <edge id="N3toJ3" from="N3" to="J3" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="J3toN3" from="J3" to="N3" numLanes="3" speed="19.44" priority="3"/>
 
+    <edge id="J3toJ6" from="J3" to="J6" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="J6toJ3" from="J6" to="J3" numLanes="3" speed="19.44" priority="3"/>
 
-    <!-- ========================================= -->
-    <!-- Internal Vertical Corridors (Cols 1, 2, 3) -->
-    <!-- ========================================= -->
-    <!-- Col 1: J1 <-> J4 -->
-    <edge id="J1toJ4" from="J1" to="J4" numLanes="2" speed="13.9"/>
-    <edge id="J4toJ1" from="J4" to="J1" numLanes="2" speed="13.9"/>
+    <edge id="J6toS3" from="J6" to="S3" numLanes="3" speed="19.44" priority="3"/>
+    <edge id="S3toJ6" from="S3" to="J6" numLanes="3" speed="19.44" priority="3"/>
 
-    <!-- Col 2: J2 <-> J5 -->
-    <edge id="J2toJ5" from="J2" to="J5" numLanes="2" speed="13.9"/>
-    <edge id="J5toJ2" from="J5" to="J2" numLanes="2" speed="13.9"/>
+    <!-- ========================================================= -->
+    <!-- DIAGONAL ROAD CONNECTION (2 LANES EACH DIRECTION, 50 KM/H)-->
+    <!-- ========================================================= -->
+    <edge id="N1toJ1" from="N1" to="J1" numLanes="2" speed="13.89" priority="2"/>
+    <edge id="J1toN1" from="J1" to="N1" numLanes="2" speed="13.89" priority="2"/>
 
-    <!-- Col 3: J3 <-> J6 -->
-    <edge id="J3toJ6" from="J3" to="J6" numLanes="2" speed="13.9"/>
-    <edge id="J6toJ3" from="J6" to="J3" numLanes="2" speed="13.9"/>
+    <!-- ========================================================= -->
+    <!-- LOCAL CONNECTING STREETS (2 LANES EACH DIRECTION, 45 KM/H)-->
+    <!-- ========================================================= -->
+    <edge id="W2toJ4" from="W2" to="J4" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="J4toW2" from="J4" to="W2" numLanes="2" speed="12.50" priority="2"/>
 
+    <edge id="J4toJ5" from="J4" to="J5" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="J5toJ4" from="J5" to="J4" numLanes="2" speed="12.50" priority="2"/>
 
-    <!-- ========================================= -->
-    <!-- North Perimeter Feeders (N1, N2, N3) -->
-    <!-- ========================================= -->
-    <edge id="N1toJ1" from="N1" to="J1" numLanes="2" speed="13.9"/>
-    <edge id="J1toN1" from="J1" to="N1" numLanes="2" speed="13.9"/>
+    <edge id="J5toJ6" from="J5" to="J6" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="J6toJ5" from="J6" to="J5" numLanes="2" speed="12.50" priority="2"/>
 
-    <edge id="N2toJ2" from="N2" to="J2" numLanes="2" speed="13.9"/>
-    <edge id="J2toN2" from="J2" to="N2" numLanes="2" speed="13.9"/>
+    <edge id="J6toE2" from="J6" to="E2" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="E2toJ6" from="E2" to="J6" numLanes="2" speed="12.50" priority="2"/>
 
-    <edge id="N3toJ3" from="N3" to="J3" numLanes="2" speed="13.9"/>
-    <edge id="J3toN3" from="J3" to="N3" numLanes="2" speed="13.9"/>
+    <edge id="J1toJ4" from="J1" to="J4" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="J4toJ1" from="J4" to="J1" numLanes="2" speed="12.50" priority="2"/>
 
+    <edge id="J4toS1" from="J4" to="S1" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="S1toJ4" from="S1" to="J4" numLanes="2" speed="12.50" priority="2"/>
 
-    <!-- ========================================= -->
-    <!-- South Perimeter Feeders (S1, S2, S3) -->
-    <!-- ========================================= -->
-    <edge id="S1toJ4" from="S1" to="J4" numLanes="2" speed="13.9"/>
-    <edge id="J4toS1" from="J4" to="S1" numLanes="2" speed="13.9"/>
+    <edge id="N2toJ2" from="N2" to="J2" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="J2toN2" from="J2" to="N2" numLanes="2" speed="12.50" priority="2"/>
 
-    <edge id="S2toJ5" from="S2" to="J5" numLanes="2" speed="13.9"/>
-    <edge id="J5toS2" from="J5" to="S2" numLanes="2" speed="13.9"/>
+    <edge id="J2toJ5" from="J2" to="J5" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="J5toJ2" from="J5" to="J2" numLanes="2" speed="12.50" priority="2"/>
 
-    <edge id="S3toJ6" from="S3" to="J6" numLanes="2" speed="13.9"/>
-    <edge id="J6toS3" from="J6" to="S3" numLanes="2" speed="13.9"/>
-
-
-    <!-- ========================================= -->
-    <!-- West Perimeter Feeders (W1, W2) -->
-    <!-- ========================================= -->
-    <edge id="W1toJ1" from="W1" to="J1" numLanes="2" speed="13.9"/>
-    <edge id="J1toW1" from="J1" to="W1" numLanes="2" speed="13.9"/>
-
-    <edge id="W2toJ4" from="W2" to="J4" numLanes="2" speed="13.9"/>
-    <edge id="J4toW2" from="J4" to="W2" numLanes="2" speed="13.9"/>
-
-
-    <!-- ========================================= -->
-    <!-- East Perimeter Feeders (E1, E2) -->
-    <!-- ========================================= -->
-    <edge id="E1toJ3" from="E1" to="J3" numLanes="2" speed="13.9"/>
-    <edge id="J3toE1" from="J3" to="E1" numLanes="2" speed="13.9"/>
-
-    <edge id="E2toJ6" from="E2" to="J6" numLanes="2" speed="13.9"/>
-    <edge id="J6toE2" from="J6" to="E2" numLanes="2" speed="13.9"/>
-
+    <edge id="J5toS2" from="J5" to="S2" numLanes="2" speed="12.50" priority="2"/>
+    <edge id="S2toJ5" from="S2" to="J5" numLanes="2" speed="12.50" priority="2"/>
 </edges>

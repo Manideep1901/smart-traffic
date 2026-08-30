@@ -1,0 +1,85 @@
+<routes>
+
+    <!-- ======================================================= -->
+    <!-- VEHICLE TYPES (Mixed Traffic: Cars, Buses, Trucks) -->
+    <!-- ======================================================= -->
+    <vType id="car"   accel="2.6" decel="4.5" length="4.5" maxSpeed="20.0" guiShape="passenger" color="yellow"/>
+    <vType id="bus"   accel="1.5" decel="3.5" length="12.0" maxSpeed="16.0" guiShape="bus"       color="blue"/>
+    <vType id="truck" accel="1.2" decel="3.0" length="10.0" maxSpeed="15.0" guiShape="truck"     color="red"/>
+
+    <!-- ======================================================= -->
+    <!-- HIGHWAY & LOCAL ROUTES -->
+    <!-- ======================================================= -->
+
+    <!-- Highway Corridors -->
+    <!-- West-East Main Highway (Passing J1 -> J2 -> J3 -> E1) -->
+    <route id="hwy_W1_E1" edges="W1toJ1 J1toJ2 J2toJ3 J3toE1"/>
+    <route id="hwy_E1_W1" edges="E1toJ3 J3toJ2 J2toJ1 J1toW1"/>
+
+    <!-- North-South Right Highway (Passing N3 -> J3 -> J6 -> S3) -->
+    <route id="hwy_N3_S3" edges="N3toJ3 J3toJ6 J6toS3"/>
+    <route id="hwy_S3_N3" edges="S3toJ6 J6toJ3 J3toN3"/>
+
+    <!-- Local Road Corridors -->
+    <route id="loc_W2_E2" edges="W2toJ4 J4toJ5 J5toJ6 J6toE2"/>
+    <route id="loc_E2_W2" edges="E2toJ6 J6toJ5 J5toJ4 J4toW2"/>
+
+    <route id="loc_N1_S1" edges="N1toJ1 J1toJ4 J4toS1"/>
+    <route id="loc_S1_N1" edges="S1toJ4 J4toJ1 J1toN1"/>
+
+    <route id="loc_N2_S2" edges="N2toJ2 J2toJ5 J5toS2"/>
+    <route id="loc_S2_N2" edges="S2toJ5 J5toJ2 J2toN2"/>
+
+    <!-- Highway to Local Interconnected Routes -->
+    <route id="route_W1_S2" edges="W1toJ1 J1toJ2 J2toJ5 J5toS2"/>
+    <route id="route_W1_S3" edges="W1toJ1 J1toJ2 J2toJ3 J3toJ6 J6toS3"/>
+    <route id="route_N1_E1" edges="N1toJ1 J1toJ2 J2toJ3 J3toE1"/>
+    <route id="route_N1_E2" edges="N1toJ1 J1toJ4 J4toJ5 J5toJ6 J6toE2"/>
+    <route id="route_S1_E1" edges="S1toJ4 J4toJ1 J1toJ2 J2toJ3 J3toE1"/>
+    <route id="route_S2_W1" edges="S2toJ5 J5toJ2 J2toJ1 J1toW1"/>
+    <route id="route_S3_W2" edges="S3toJ6 J6toJ5 J5toJ4 J4toW2"/>
+    <route id="route_E1_S1" edges="E1toJ3 J3toJ2 J2toJ1 J1toJ4 J4toS1"/>
+    <route id="route_E2_N2" edges="E2toJ6 J6toJ5 J5toJ2 J2toN2"/>
+    <route id="route_N2_E2" edges="N2toJ2 J2toJ3 J3toJ6 J6toE2"/>
+    <route id="route_N3_W1" edges="N3toJ3 J3toJ2 J2toJ1 J1toW1"/>
+    <route id="route_W2_N3" edges="W2toJ4 J4toJ5 J5toJ2 J2toJ3 J3toN3"/>
+
+
+    <!-- ======================================================= -->
+    <!-- TRAFFIC FLOWS (SORTED BY BEGIN TIME FOR CLEAN SIMULATION) -->
+    <!-- ======================================================= -->
+
+    <!-- begin = 0 -->
+    <flow id="flow_hwy_W1_E1_car"   type="car"   route="hwy_W1_E1" begin="0" end="1000" vehsPerHour="260"/>
+    <flow id="flow_hwy_E1_W1_car"   type="car"   route="hwy_E1_W1" begin="0" end="1000" vehsPerHour="240"/>
+    <flow id="flow_hwy_N3_S3_car"   type="car"   route="hwy_N3_S3" begin="0" end="1000" vehsPerHour="220"/>
+    <flow id="flow_hwy_S3_N3_car"   type="car"   route="hwy_S3_N3" begin="0" end="1000" vehsPerHour="220"/>
+    <flow id="flow_loc_W2_E2_car"   type="car"   route="loc_W2_E2" begin="0" end="1000" vehsPerHour="180"/>
+    <flow id="flow_loc_E2_W2_car"   type="car"   route="loc_E2_W2" begin="0" end="1000" vehsPerHour="160"/>
+    <flow id="flow_loc_N1_S1_car"   type="car"   route="loc_N1_S1" begin="0" end="1000" vehsPerHour="180"/>
+    <flow id="flow_loc_S1_N1_car"   type="car"   route="loc_S1_N1" begin="0" end="1000" vehsPerHour="160"/>
+    <flow id="flow_loc_N2_S2_car"   type="car"   route="loc_N2_S2" begin="0" end="1000" vehsPerHour="200"/>
+    <flow id="flow_loc_S2_N2_car"   type="car"   route="loc_S2_N2" begin="0" end="1000" vehsPerHour="190"/>
+    <flow id="flow_W1_S2"           type="car"   route="route_W1_S2" begin="0" end="1000" vehsPerHour="120"/>
+    <flow id="flow_W1_S3"           type="truck" route="route_W1_S3" begin="0" end="1000" vehsPerHour="40"/>
+    <flow id="flow_N1_E1"           type="car"   route="route_N1_E1" begin="0" end="1000" vehsPerHour="140"/>
+    <flow id="flow_N1_E2"           type="car"   route="route_N1_E2" begin="0" end="1000" vehsPerHour="110"/>
+    <flow id="flow_S1_E1"           type="bus"   route="route_S1_E1" begin="0" end="1000" vehsPerHour="30"/>
+    <flow id="flow_S2_W1"           type="car"   route="route_S2_W1" begin="0" end="1000" vehsPerHour="130"/>
+    <flow id="flow_S3_W2"           type="car"   route="route_S3_W2" begin="0" end="1000" vehsPerHour="110"/>
+    <flow id="flow_E1_S1"           type="car"   route="route_E1_S1" begin="0" end="1000" vehsPerHour="120"/>
+    <flow id="flow_E2_N2"           type="car"   route="route_E2_N2" begin="0" end="1000" vehsPerHour="100"/>
+    <flow id="flow_N2_E2"           type="car"   route="route_N2_E2" begin="0" end="1000" vehsPerHour="140"/>
+    <flow id="flow_N3_W1"           type="truck" route="route_N3_W1" begin="0" end="1000" vehsPerHour="40"/>
+    <flow id="flow_W2_N3"           type="car"   route="route_W2_N3" begin="0" end="1000" vehsPerHour="110"/>
+
+    <!-- begin = 5 -->
+    <flow id="flow_hwy_W1_E1_bus"   type="bus"   route="hwy_W1_E1" begin="5" end="1000" vehsPerHour="40"/>
+
+    <!-- begin = 10 -->
+    <flow id="flow_hwy_E1_W1_truck" type="truck" route="hwy_E1_W1" begin="10" end="1000" vehsPerHour="30"/>
+
+    <!-- begin = 15 -->
+    <flow id="flow_hwy_N3_S3_bus"   type="bus"   route="hwy_N3_S3" begin="15" end="1000" vehsPerHour="35"/>
+
+</routes>

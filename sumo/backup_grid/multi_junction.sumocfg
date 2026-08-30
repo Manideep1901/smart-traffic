@@ -3,7 +3,6 @@
         <net-file value="multi_junction.net.xml"/>
         <route-files value="multi_junction.rou.xml"/>
         <additional-files value="multi_junction.add.xml"/>
-        <gui-settings-file value="gui-settings.cfg"/>
     </input>
     <time>
         <begin value="0"/>
