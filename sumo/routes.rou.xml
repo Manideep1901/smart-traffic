@@ -1,6 +1,6 @@
 <routes>
 
-    <vType id="car" accel="2.6" decel="4.5" length="4.5" maxSpeed="16.67" guiShape="passenger"/>
+    <vType id="car" accel="2.0" decel="6.0" length="4.7" width="1.80" maxSpeed="20" guiShape="passenger/sedan" color="0.85,0.85,0.88"/>
 
     <!-- Define route for every direction -->
     <route id="N_S" edges="NtoC CtoS"/>

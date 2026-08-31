@@ -1,0 +1,28 @@
+<nodes>
+    <!-- 6 Signalized Intersections -->
+    <node id="J1" x="0"   y="400" type="traffic_light"/>
+    <node id="J2" x="400" y="400" type="traffic_light"/>
+    <node id="J3" x="800" y="400" type="traffic_light"/>
+    <node id="J4" x="0"   y="0"   type="traffic_light"/>
+    <node id="J5" x="400" y="0"   type="traffic_light"/>
+    <node id="J6" x="800" y="0"   type="traffic_light"/>
+
+    <!-- Boundary Entry / Exit Nodes -->
+    <!-- North Perimeter -->
+    <node id="N1" x="0"   y="700" type="priority"/>
+    <node id="N2" x="400" y="700" type="priority"/>
+    <node id="N3" x="800" y="700" type="priority"/>
+
+    <!-- South Perimeter -->
+    <node id="S1" x="0"   y="-300" type="priority"/>
+    <node id="S2" x="400" y="-300" type="priority"/>
+    <node id="S3" x="800" y="-300" type="priority"/>
+
+    <!-- West Perimeter -->
+    <node id="W1" x="-400" y="400" type="priority"/>
+    <node id="W2" x="-400" y="0"   type="priority"/>
+
+    <!-- East Perimeter -->
+    <node id="E1" x="1200" y="400" type="priority"/>
+    <node id="E2" x="1200" y="0"   type="priority"/>
+</nodes>

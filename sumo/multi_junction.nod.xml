@@ -1,28 +1,24 @@
 <nodes>
-    <!-- 6 Signalized Intersections (2x3 Grid) -->
-    <node id="J1" x="0"   y="300"  type="traffic_light"/>
-    <node id="J2" x="300" y="300"  type="traffic_light"/>
-    <node id="J3" x="600" y="300"  type="traffic_light"/>
-    <node id="J4" x="0"   y="0"    type="traffic_light"/>
-    <node id="J5" x="300" y="0"    type="traffic_light"/>
-    <node id="J6" x="600" y="0"    type="traffic_light"/>
+    <!-- 6 Signalized Intersections -->
+    <node id="J1" x="400"  y="500"  type="traffic_light"/>
+    <node id="J2" x="950"  y="500"  type="traffic_light"/>
+    <node id="J3" x="1600" y="500"  type="traffic_light"/>
+    <node id="J4" x="250"  y="150"  type="traffic_light"/>
+    <node id="J5" x="900"  y="150"  type="traffic_light"/>
+    <node id="J6" x="1600" y="150"  type="traffic_light"/>
 
-    <!-- Boundary Entry / Exit Nodes -->
-    <!-- North Perimeter -->
-    <node id="N1" x="0"   y="600"  type="priority"/>
-    <node id="N2" x="300" y="600"  type="priority"/>
-    <node id="N3" x="600" y="600"  type="priority"/>
+    <!-- Perimeter Boundary Entry/Exit Nodes -->
+    <node id="N1" x="50"   y="850"  type="priority"/>
+    <node id="N2" x="950"  y="950"  type="priority"/>
+    <node id="N3" x="1600" y="950"  type="priority"/>
 
-    <!-- South Perimeter -->
-    <node id="S1" x="0"   y="-300" type="priority"/>
-    <node id="S2" x="300" y="-300" type="priority"/>
-    <node id="S3" x="600" y="-300" type="priority"/>
+    <node id="S1" x="250"  y="-250" type="priority"/>
+    <node id="S2" x="900"  y="-250" type="priority"/>
+    <node id="S3" x="1600" y="-250" type="priority"/>
 
-    <!-- West Perimeter -->
-    <node id="W1" x="-300" y="300" type="priority"/>
-    <node id="W2" x="-300" y="0"   type="priority"/>
+    <node id="W1" x="-300" y="500"  type="priority"/>
+    <node id="W2" x="-300" y="150"  type="priority"/>
 
-    <!-- East Perimeter -->
-    <node id="E1" x="900"  y="300" type="priority"/>
-    <node id="E2" x="900"  y="0"   type="priority"/>
+    <node id="E1" x="2100" y="500"  type="priority"/>
+    <node id="E2" x="2100" y="150"  type="priority"/>
 </nodes>

@@ -1,0 +1,51 @@
+<additional>
+
+    <!-- ======================================================= -->
+    <!-- BUILDINGS (Rectangular Blocks as in target_layout.jpeg) -->
+    <!-- ======================================================= -->
+
+    <!-- Block 1: Top-Left (North of J1 - J2) -->
+    <poly id="bldg_top_left_1" type="building" color="0.75,0.78,0.85" fill="true" shape="40,460 180,460 180,640 40,640"/>
+    <poly id="bldg_top_left_2" type="building" color="0.80,0.82,0.88" fill="true" shape="220,460 360,460 360,640 220,640"/>
+
+    <!-- Block 2: Top-Right (North of J2 - J3) -->
+    <poly id="bldg_top_right_1" type="building" color="0.72,0.76,0.82" fill="true" shape="440,460 580,460 580,640 440,640"/>
+    <poly id="bldg_top_right_2" type="building" color="0.78,0.80,0.86" fill="true" shape="620,460 760,460 760,640 620,640"/>
+
+    <!-- Block 3: Middle-Left (Between J1, J2, J4, J5) -->
+    <poly id="bldg_mid_left_1" type="building" color="0.74,0.76,0.84" fill="true" shape="40,240 180,240 180,360 40,360"/>
+    <poly id="bldg_mid_left_2" type="building" color="0.77,0.80,0.87" fill="true" shape="220,240 360,240 360,360 220,360"/>
+    <poly id="bldg_mid_left_3" type="building" color="0.75,0.77,0.83" fill="true" shape="40,40 180,40 180,200 40,200"/>
+
+    <!-- Block 4: Middle-Right Central Block (Between J2, J3, J5, J6) -->
+    <poly id="bldg_mid_right_main" type="building" color="0.70,0.74,0.82" fill="true" shape="440,40 760,40 760,360 440,360"/>
+
+    <!-- Block 5: Bottom-Left (South of J4 - J5) -->
+    <poly id="bldg_bot_left_1" type="building" color="0.76,0.79,0.85" fill="true" shape="40,-240 180,-240 180,-60 40,-60"/>
+    <poly id="bldg_bot_left_2" type="building" color="0.73,0.76,0.82" fill="true" shape="220,-240 360,-240 360,-60 220,-60"/>
+
+    <!-- Block 6: Bottom-Right (South of J5 - J6) -->
+    <poly id="bldg_bot_right_1" type="building" color="0.75,0.77,0.84" fill="true" shape="440,-240 580,-240 580,-60 440,-60"/>
+    <poly id="bldg_bot_right_2" type="building" color="0.78,0.81,0.87" fill="true" shape="620,-240 760,-240 760,-60 620,-60"/>
+
+
+    <!-- ======================================================= -->
+    <!-- TREES & GREEN AREAS (Medians, Sidewalks, Open Spaces) -->
+    <!-- ======================================================= -->
+
+    <!-- Central Park / Open Green Space -->
+    <poly id="park_central" type="park" color="0.22,0.65,0.30" fill="true" shape="220,40 360,40 360,200 220,200"/>
+
+    <!-- Tree Lines along Highway Sidewalks -->
+    <poly id="trees_hwy_vert_east" type="forest" color="0.15,0.58,0.22" fill="true" shape="825,-280 840,-280 840,680 825,680"/>
+    <poly id="trees_hwy_vert_west" type="forest" color="0.15,0.58,0.22" fill="true" shape="775,-280 790,-280 790,680 775,680"/>
+
+    <poly id="trees_hwy_horiz_north" type="forest" color="0.15,0.58,0.22" fill="true" shape="-380,425 1180,425 1180,440 -380,440"/>
+    <poly id="trees_hwy_horiz_south" type="forest" color="0.15,0.58,0.22" fill="true" shape="-380,360 1180,360 1180,375 -380,375"/>
+
+    <!-- Green Medians -->
+    <poly id="median_hwy_mid" type="park" color="0.18,0.60,0.25" fill="true" shape="50,398 350,398 350,402 50,402"/>
+    <poly id="median_hwy_east" type="park" color="0.18,0.60,0.25" fill="true" shape="450,398 750,398 750,402 450,402"/>
+    <poly id="median_hwy_vert" type="park" color="0.18,0.60,0.25" fill="true" shape="798,50 798,350 802,350 802,50"/>
+
+</additional>

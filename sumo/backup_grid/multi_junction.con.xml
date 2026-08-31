@@ -1,0 +1,166 @@
+<connections>
+
+    <!-- ========================================= -->
+    <!-- JUNCTION J1 CONNECTIONS -->
+    <!-- ========================================= -->
+    <!-- North incoming (N1toJ1, 2 lanes) -->
+    <connection from="N1toJ1" to="J1toJ4" fromLane="0" toLane="0"/> <!-- straight -->
+    <connection from="N1toJ1" to="J1toW1" fromLane="0" toLane="0"/> <!-- right -->
+    <connection from="N1toJ1" to="J1toJ2" fromLane="1" toLane="2"/> <!-- left -->
+
+    <!-- South incoming (J4toJ1, 2 lanes) -->
+    <connection from="J4toJ1" to="J1toN1" fromLane="0" toLane="0"/> <!-- straight -->
+    <connection from="J4toJ1" to="J1toJ2" fromLane="0" toLane="0"/> <!-- right -->
+    <connection from="J4toJ1" to="J1toW1" fromLane="1" toLane="2"/> <!-- left -->
+
+    <!-- West incoming (W1toJ1, 3 lanes - Highway) -->
+    <connection from="W1toJ1" to="J1toJ2" fromLane="0" toLane="0"/> <!-- straight -->
+    <connection from="W1toJ1" to="J1toJ2" fromLane="1" toLane="1"/> <!-- straight -->
+    <connection from="W1toJ1" to="J1toJ2" fromLane="2" toLane="2"/> <!-- straight -->
+    <connection from="W1toJ1" to="J1toN1" fromLane="2" toLane="1"/> <!-- left -->
+    <connection from="W1toJ1" to="J1toJ4" fromLane="0" toLane="1"/> <!-- right -->
+
+    <!-- East incoming (J2toJ1, 3 lanes - Highway) -->
+    <connection from="J2toJ1" to="J1toW1" fromLane="0" toLane="0"/> <!-- straight -->
+    <connection from="J2toJ1" to="J1toW1" fromLane="1" toLane="1"/> <!-- straight -->
+    <connection from="J2toJ1" to="J1toW1" fromLane="2" toLane="2"/> <!-- straight -->
+    <connection from="J2toJ1" to="J1toJ4" fromLane="2" toLane="1"/> <!-- left -->
+    <connection from="J2toJ1" to="J1toN1" fromLane="0" toLane="0"/> <!-- right -->
+
+
+    <!-- ========================================= -->
+    <!-- JUNCTION J2 CONNECTIONS -->
+    <!-- ========================================= -->
+    <!-- North incoming (N2toJ2, 2 lanes) -->
+    <connection from="N2toJ2" to="J2toJ5" fromLane="0" toLane="0"/>
+    <connection from="N2toJ2" to="J2toJ1" fromLane="0" toLane="0"/>
+    <connection from="N2toJ2" to="J2toJ3" fromLane="1" toLane="2"/>
+
+    <!-- South incoming (J5toJ2, 2 lanes) -->
+    <connection from="J5toJ2" to="J2toN2" fromLane="0" toLane="0"/>
+    <connection from="J5toJ2" to="J2toJ3" fromLane="0" toLane="0"/>
+    <connection from="J5toJ2" to="J2toJ1" fromLane="1" toLane="2"/>
+
+    <!-- West incoming (J1toJ2, 3 lanes - Highway) -->
+    <connection from="J1toJ2" to="J2toJ3" fromLane="0" toLane="0"/>
+    <connection from="J1toJ2" to="J2toJ3" fromLane="1" toLane="1"/>
+    <connection from="J1toJ2" to="J2toJ3" fromLane="2" toLane="2"/>
+    <connection from="J1toJ2" to="J2toN2" fromLane="2" toLane="1"/>
+    <connection from="J1toJ2" to="J2toJ5" fromLane="0" toLane="1"/>
+
+    <!-- East incoming (J3toJ2, 3 lanes - Highway) -->
+    <connection from="J3toJ2" to="J2toJ1" fromLane="0" toLane="0"/>
+    <connection from="J3toJ2" to="J2toJ1" fromLane="1" toLane="1"/>
+    <connection from="J3toJ2" to="J2toJ1" fromLane="2" toLane="2"/>
+    <connection from="J3toJ2" to="J2toJ5" fromLane="2" toLane="1"/>
+    <connection from="J3toJ2" to="J2toN2" fromLane="0" toLane="0"/>
+
+
+    <!-- ========================================= -->
+    <!-- JUNCTION J3 CONNECTIONS (Double Highway Intersection) -->
+    <!-- ========================================= -->
+    <!-- North incoming (N3toJ3, 3 lanes - Highway) -->
+    <connection from="N3toJ3" to="J3toJ6" fromLane="0" toLane="0"/>
+    <connection from="N3toJ3" to="J3toJ6" fromLane="1" toLane="1"/>
+    <connection from="N3toJ3" to="J3toJ6" fromLane="2" toLane="2"/>
+    <connection from="N3toJ3" to="J3toJ2" fromLane="2" toLane="2"/>
+    <connection from="N3toJ3" to="J3toE1" fromLane="0" toLane="0"/>
+
+    <!-- South incoming (J6toJ3, 3 lanes - Highway) -->
+    <connection from="J6toJ3" to="J3toN3" fromLane="0" toLane="0"/>
+    <connection from="J6toJ3" to="J3toN3" fromLane="1" toLane="1"/>
+    <connection from="J6toJ3" to="J3toN3" fromLane="2" toLane="2"/>
+    <connection from="J6toJ3" to="J3toE1" fromLane="2" toLane="2"/>
+    <connection from="J6toJ3" to="J3toJ2" fromLane="0" toLane="0"/>
+
+    <!-- West incoming (J2toJ3, 3 lanes - Highway) -->
+    <connection from="J2toJ3" to="J3toE1" fromLane="0" toLane="0"/>
+    <connection from="J2toJ3" to="J3toE1" fromLane="1" toLane="1"/>
+    <connection from="J2toJ3" to="J3toE1" fromLane="2" toLane="2"/>
+    <connection from="J2toJ3" to="J3toN3" fromLane="2" toLane="2"/>
+    <connection from="J2toJ3" to="J3toJ6" fromLane="0" toLane="0"/>
+
+    <!-- East incoming (E1toJ3, 3 lanes - Highway) -->
+    <connection from="E1toJ3" to="J3toJ2" fromLane="0" toLane="0"/>
+    <connection from="E1toJ3" to="J3toJ2" fromLane="1" toLane="1"/>
+    <connection from="E1toJ3" to="J3toJ2" fromLane="2" toLane="2"/>
+    <connection from="E1toJ3" to="J3toJ6" fromLane="2" toLane="2"/>
+    <connection from="E1toJ3" to="J3toN3" fromLane="0" toLane="0"/>
+
+
+    <!-- ========================================= -->
+    <!-- JUNCTION J4 CONNECTIONS -->
+    <!-- ========================================= -->
+    <!-- North incoming (J1toJ4, 2 lanes) -->
+    <connection from="J1toJ4" to="J4toS1" fromLane="0" toLane="0"/>
+    <connection from="J1toJ4" to="J4toW2" fromLane="0" toLane="0"/>
+    <connection from="J1toJ4" to="J4toJ5" fromLane="1" toLane="1"/>
+
+    <!-- South incoming (S1toJ4, 2 lanes) -->
+    <connection from="S1toJ4" to="J4toJ1" fromLane="0" toLane="0"/>
+    <connection from="S1toJ4" to="J4toJ5" fromLane="0" toLane="0"/>
+    <connection from="S1toJ4" to="J4toW2" fromLane="1" toLane="1"/>
+
+    <!-- West incoming (W2toJ4, 2 lanes) -->
+    <connection from="W2toJ4" to="J4toJ5" fromLane="0" toLane="0"/>
+    <connection from="W2toJ4" to="J4toJ1" fromLane="1" toLane="1"/>
+    <connection from="W2toJ4" to="J4toS1" fromLane="0" toLane="0"/>
+
+    <!-- East incoming (J5toJ4, 2 lanes) -->
+    <connection from="J5toJ4" to="J4toW2" fromLane="0" toLane="0"/>
+    <connection from="J5toJ4" to="J4toS1" fromLane="1" toLane="1"/>
+    <connection from="J5toJ4" to="J4toJ1" fromLane="0" toLane="0"/>
+
+
+    <!-- ========================================= -->
+    <!-- JUNCTION J5 CONNECTIONS -->
+    <!-- ========================================= -->
+    <!-- North incoming (J2toJ5, 2 lanes) -->
+    <connection from="J2toJ5" to="J5toS2" fromLane="0" toLane="0"/>
+    <connection from="J2toJ5" to="J5toJ4" fromLane="0" toLane="0"/>
+    <connection from="J2toJ5" to="J5toJ6" fromLane="1" toLane="1"/>
+
+    <!-- South incoming (S2toJ5, 2 lanes) -->
+    <connection from="S2toJ5" to="J5toJ2" fromLane="0" toLane="0"/>
+    <connection from="S2toJ5" to="J5toJ6" fromLane="0" toLane="0"/>
+    <connection from="S2toJ5" to="J5toJ4" fromLane="1" toLane="1"/>
+
+    <!-- West incoming (J4toJ5, 2 lanes) -->
+    <connection from="J4toJ5" to="J5toJ6" fromLane="0" toLane="0"/>
+    <connection from="J4toJ5" to="J5toJ2" fromLane="1" toLane="1"/>
+    <connection from="J4toJ5" to="J5toS2" fromLane="0" toLane="0"/>
+
+    <!-- East incoming (J6toJ5, 2 lanes) -->
+    <connection from="J6toJ5" to="J5toJ4" fromLane="0" toLane="0"/>
+    <connection from="J6toJ5" to="J5toS2" fromLane="1" toLane="1"/>
+    <connection from="J6toJ5" to="J5toJ2" fromLane="0" toLane="0"/>
+
+
+    <!-- ========================================= -->
+    <!-- JUNCTION J6 CONNECTIONS (Highway Vertical + Local Horizontal) -->
+    <!-- ========================================= -->
+    <!-- North incoming (J3toJ6, 3 lanes - Highway) -->
+    <connection from="J3toJ6" to="J6toS3" fromLane="0" toLane="0"/>
+    <connection from="J3toJ6" to="J6toS3" fromLane="1" toLane="1"/>
+    <connection from="J3toJ6" to="J6toS3" fromLane="2" toLane="2"/>
+    <connection from="J3toJ6" to="J6toJ5" fromLane="2" toLane="1"/>
+    <connection from="J3toJ6" to="J6toE2" fromLane="0" toLane="0"/>
+
+    <!-- South incoming (S3toJ6, 3 lanes - Highway) -->
+    <connection from="S3toJ6" to="J6toJ3" fromLane="0" toLane="0"/>
+    <connection from="S3toJ6" to="J6toJ3" fromLane="1" toLane="1"/>
+    <connection from="S3toJ6" to="J6toJ3" fromLane="2" toLane="2"/>
+    <connection from="S3toJ6" to="J6toE2" fromLane="2" toLane="1"/>
+    <connection from="S3toJ6" to="J6toJ5" fromLane="0" toLane="0"/>
+
+    <!-- West incoming (J5toJ6, 2 lanes) -->
+    <connection from="J5toJ6" to="J6toE2" fromLane="0" toLane="0"/>
+    <connection from="J5toJ6" to="J6toJ3" fromLane="1" toLane="2"/>
+    <connection from="J5toJ6" to="J6toS3" fromLane="0" toLane="0"/>
+
+    <!-- East incoming (E2toJ6, 2 lanes) -->
+    <connection from="E2toJ6" to="J6toJ5" fromLane="0" toLane="0"/>
+    <connection from="E2toJ6" to="J6toS3" fromLane="1" toLane="1"/>
+    <connection from="E2toJ6" to="J6toJ3" fromLane="0" toLane="0"/>
+
+</connections>
