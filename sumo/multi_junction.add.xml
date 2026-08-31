@@ -1,83 +1,363 @@
 <additional>
-    <poly id="garden_BM" type="park" color="0.32,0.65,0.36" layer="1" fill="true" shape="510.0,-91.0 650.0,-91.0 650.0,-14.0 510.0,-14.0"/>
-    <poly id="bldg_TL_1_1" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="-242.0,573.0 -188.0,573.0 -188.0,652.0 -242.0,652.0"/>
-    <poly id="bldg_TL_1_2" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="-242.0,668.0 -188.0,668.0 -188.0,747.0 -242.0,747.0"/>
-    <poly id="bldg_TL_1_3" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="-242.0,763.0 -188.0,763.0 -188.0,842.0 -242.0,842.0"/>
-    <poly id="bldg_TL_2_1" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="-172.0,573.0 -118.0,573.0 -118.0,652.0 -172.0,652.0"/>
-    <poly id="bldg_TL_2_2" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="-172.0,668.0 -118.0,668.0 -118.0,747.0 -172.0,747.0"/>
-    <poly id="bldg_TL_2_3" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="-172.0,763.0 -118.0,763.0 -118.0,842.0 -172.0,842.0"/>
-    <poly id="bldg_TL_3_1" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="-102.0,573.0 -48.0,573.0 -48.0,652.0 -102.0,652.0"/>
-    <poly id="bldg_TL_3_2" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="-102.0,668.0 -48.0,668.0 -48.0,747.0 -102.0,747.0"/>
-    <poly id="bldg_TL_3_3" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="-102.0,763.0 -48.0,763.0 -48.0,842.0 -102.0,842.0"/>
-    <poly id="bldg_TM_3_1" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="768.0,573.0 872.0,573.0 872.0,662.0 768.0,662.0"/>
-    <poly id="bldg_TM_3_3" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="768.0,783.0 872.0,783.0 872.0,872.0 768.0,872.0"/>
-    <poly id="bldg_TR_1_1" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="1048.0,573.0 1152.0,573.0 1152.0,662.0 1048.0,662.0"/>
-    <poly id="bldg_TR_1_3" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="1048.0,783.0 1152.0,783.0 1152.0,872.0 1048.0,872.0"/>
-    <poly id="bldg_TR_2_1" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="1168.0,573.0 1272.0,573.0 1272.0,662.0 1168.0,662.0"/>
-    <poly id="bldg_TR_3_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1288.0,573.0 1392.0,573.0 1392.0,662.0 1288.0,662.0"/>
-    <poly id="bldg_TR_3_3" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="1288.0,783.0 1392.0,783.0 1392.0,872.0 1288.0,872.0"/>
-    <poly id="bldg_TR_4_1" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="1408.0,573.0 1512.0,573.0 1512.0,662.0 1408.0,662.0"/>
-    <poly id="bldg_TR_4_3" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="1408.0,783.0 1512.0,783.0 1512.0,872.0 1408.0,872.0"/>
-    <poly id="bldg_TE_1_1" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="1688.0,573.0 1792.0,573.0 1792.0,662.0 1688.0,662.0"/>
-    <poly id="bldg_TE_1_3" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="1688.0,783.0 1792.0,783.0 1792.0,872.0 1688.0,872.0"/>
-    <poly id="bldg_ML_1_1" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="-242.0,218.0 -124.7,218.0 -124.7,317.0 -242.0,317.0"/>
-    <poly id="bldg_ML_1_2" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="-242.0,333.0 -124.7,333.0 -124.7,432.0 -242.0,432.0"/>
-    <poly id="bldg_ML_2_1" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="-108.7,218.0 8.7,218.0 8.7,317.0 -108.7,317.0"/>
-    <poly id="bldg_ML_3_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="24.7,218.0 142.0,218.0 142.0,317.0 24.7,317.0"/>
-    <poly id="bldg_ML_3_2" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="24.7,333.0 142.0,333.0 142.0,432.0 24.7,432.0"/>
-    <poly id="bldg_CM_1_1" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="368.0,218.0 469.5,218.0 469.5,317.0 368.0,317.0"/>
-    <poly id="bldg_CM_1_2" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="368.0,333.0 469.5,333.0 469.5,432.0 368.0,432.0"/>
-    <poly id="bldg_CM_2_1" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="485.5,218.0 587.0,218.0 587.0,317.0 485.5,317.0"/>
-    <poly id="bldg_CM_3_1" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="603.0,218.0 704.5,218.0 704.5,317.0 603.0,317.0"/>
-    <poly id="bldg_CM_3_2" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="603.0,333.0 704.5,333.0 704.5,432.0 603.0,432.0"/>
-    <poly id="bldg_CM_4_1" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="720.5,218.0 822.0,218.0 822.0,317.0 720.5,317.0"/>
-    <poly id="bldg_CM_4_2" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="720.5,333.0 822.0,333.0 822.0,432.0 720.5,432.0"/>
-    <poly id="bldg_CR_1_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1028.0,218.0 1137.0,218.0 1137.0,317.0 1028.0,317.0"/>
-    <poly id="bldg_CR_1_2" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="1028.0,333.0 1137.0,333.0 1137.0,432.0 1028.0,432.0"/>
-    <poly id="bldg_CR_2_1" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="1153.0,218.0 1262.0,218.0 1262.0,317.0 1153.0,317.0"/>
-    <poly id="bldg_CR_3_1" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="1278.0,218.0 1387.0,218.0 1387.0,317.0 1278.0,317.0"/>
-    <poly id="bldg_CR_3_2" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="1278.0,333.0 1387.0,333.0 1387.0,432.0 1278.0,432.0"/>
-    <poly id="bldg_CR_4_1" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="1403.0,218.0 1512.0,218.0 1512.0,317.0 1403.0,317.0"/>
-    <poly id="bldg_CR_4_2" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="1403.0,333.0 1512.0,333.0 1512.0,432.0 1403.0,432.0"/>
-    <poly id="bldg_CE_1_1" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="1688.0,218.0 1792.0,218.0 1792.0,317.0 1688.0,317.0"/>
-    <poly id="bldg_CE_1_2" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="1688.0,333.0 1792.0,333.0 1792.0,432.0 1688.0,432.0"/>
-    <poly id="bldg_BL_1_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="-242.0,-182.0 -153.0,-182.0 -153.0,-106.3 -242.0,-106.3"/>
-    <poly id="bldg_BL_1_2" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="-242.0,-90.3 -153.0,-90.3 -153.0,-14.7 -242.0,-14.7"/>
-    <poly id="bldg_BL_1_3" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="-242.0,1.3 -153.0,1.3 -153.0,77.0 -242.0,77.0"/>
-    <poly id="bldg_BL_2_1" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="-137.0,-182.0 -48.0,-182.0 -48.0,-106.3 -137.0,-106.3"/>
-    <poly id="bldg_BL_2_2" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="-137.0,-90.3 -48.0,-90.3 -48.0,-14.7 -137.0,-14.7"/>
-    <poly id="bldg_BL_2_3" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="-137.0,1.3 -48.0,1.3 -48.0,77.0 -137.0,77.0"/>
-    <poly id="bldg_BL_3_1" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="-32.0,-182.0 57.0,-182.0 57.0,-106.3 -32.0,-106.3"/>
-    <poly id="bldg_BL_3_2" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="-32.0,-90.3 57.0,-90.3 57.0,-14.7 -32.0,-14.7"/>
-    <poly id="bldg_BL_3_3" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="-32.0,1.3 57.0,1.3 57.0,77.0 -32.0,77.0"/>
-    <poly id="bldg_BL_4_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="73.0,-182.0 162.0,-182.0 162.0,-106.3 73.0,-106.3"/>
-    <poly id="bldg_BL_4_2" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="73.0,-90.3 162.0,-90.3 162.0,-14.7 73.0,-14.7"/>
-    <poly id="bldg_BL_4_3" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="73.0,1.3 162.0,1.3 162.0,77.0 73.0,77.0"/>
-    <poly id="bldg_BM_1_1" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="338.0,-182.0 447.0,-182.0 447.0,-106.3 338.0,-106.3"/>
-    <poly id="bldg_BM_1_2" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="338.0,-90.3 447.0,-90.3 447.0,-14.7 338.0,-14.7"/>
-    <poly id="bldg_BM_1_3" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="338.0,1.3 447.0,1.3 447.0,77.0 338.0,77.0"/>
-    <poly id="bldg_BM_2_1" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="463.0,-182.0 572.0,-182.0 572.0,-106.3 463.0,-106.3"/>
-    <poly id="bldg_BM_3_1" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="588.0,-182.0 697.0,-182.0 697.0,-106.3 588.0,-106.3"/>
-    <poly id="bldg_BM_3_3" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="588.0,1.3 697.0,1.3 697.0,77.0 588.0,77.0"/>
-    <poly id="bldg_BM_4_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="713.0,-182.0 822.0,-182.0 822.0,-106.3 713.0,-106.3"/>
-    <poly id="bldg_BM_4_2" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="713.0,-90.3 822.0,-90.3 822.0,-14.7 713.0,-14.7"/>
-    <poly id="bldg_BM_4_3" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="713.0,1.3 822.0,1.3 822.0,77.0 713.0,77.0"/>
-    <poly id="bldg_BR_1_1" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="988.0,-182.0 1107.0,-182.0 1107.0,-106.3 988.0,-106.3"/>
-    <poly id="bldg_BR_1_2" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="988.0,-90.3 1107.0,-90.3 1107.0,-14.7 988.0,-14.7"/>
-    <poly id="bldg_BR_1_3" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="988.0,1.3 1107.0,1.3 1107.0,77.0 988.0,77.0"/>
-    <poly id="bldg_BR_2_1" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="1123.0,-182.0 1242.0,-182.0 1242.0,-106.3 1123.0,-106.3"/>
-    <poly id="bldg_BR_2_2" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="1123.0,-90.3 1242.0,-90.3 1242.0,-14.7 1123.0,-14.7"/>
-    <poly id="bldg_BR_2_3" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="1123.0,1.3 1242.0,1.3 1242.0,77.0 1123.0,77.0"/>
-    <poly id="bldg_BR_3_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1258.0,-182.0 1377.0,-182.0 1377.0,-106.3 1258.0,-106.3"/>
-    <poly id="bldg_BR_3_2" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="1258.0,-90.3 1377.0,-90.3 1377.0,-14.7 1258.0,-14.7"/>
-    <poly id="bldg_BR_3_3" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="1258.0,1.3 1377.0,1.3 1377.0,77.0 1258.0,77.0"/>
-    <poly id="bldg_BR_4_1" type="building" color="0.98,0.98,0.98" layer="2" fill="true" shape="1393.0,-182.0 1512.0,-182.0 1512.0,-106.3 1393.0,-106.3"/>
-    <poly id="bldg_BR_4_2" type="building" color="0.93,0.94,0.96" layer="2" fill="true" shape="1393.0,-90.3 1512.0,-90.3 1512.0,-14.7 1393.0,-14.7"/>
-    <poly id="bldg_BR_4_3" type="building" color="0.96,0.90,0.85" layer="2" fill="true" shape="1393.0,1.3 1512.0,1.3 1512.0,77.0 1393.0,77.0"/>
-    <poly id="bldg_BE_1_1" type="building" color="0.88,0.91,0.94" layer="2" fill="true" shape="1688.0,-182.0 1792.0,-182.0 1792.0,-106.3 1688.0,-106.3"/>
-    <poly id="bldg_BE_1_2" type="building" color="0.94,0.88,0.82" layer="2" fill="true" shape="1688.0,-90.3 1792.0,-90.3 1792.0,-14.7 1688.0,-14.7"/>
-    <poly id="bldg_BE_1_3" type="building" color="0.99,0.99,0.99" layer="2" fill="true" shape="1688.0,1.3 1792.0,1.3 1792.0,77.0 1688.0,77.0"/>
-    <poly id="bldg_BE_2_1" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1808.0,-182.0 1912.0,-182.0 1912.0,-106.3 1808.0,-106.3"/>
-    <poly id="bldg_BE_3_1" type="building" color="0.95,0.92,0.88" layer="2" fill="true" shape="1928.0,-182.0 2032.0,-182.0 2032.0,-106.3 1928.0,-106.3"/>
-    <poly id="bldg_BE_3_2" type="building" color="0.85,0.88,0.92" layer="2" fill="true" shape="1928.0,-90.3 2032.0,-90.3 2032.0,-14.7 1928.0,-14.7"/>
+    <poly id="park_TL_north" type="park" color="0.30,0.62,0.34" layer="1" fill="true" shape="60.0,960.0 300.0,960.0 300.0,1140.0 60.0,1140.0"/>
+    <poly id="garden_TL_rose_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="80.0,1060.0 140.0,1060.0 140.0,1120.0 80.0,1120.0"/>
+    <poly id="garden_TL_lavender_1" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="160.0,1060.0 220.0,1060.0 220.0,1120.0 160.0,1120.0"/>
+    <poly id="garden_TL_marigold_1" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="240.0,1060.0 280.0,1060.0 280.0,1120.0 240.0,1120.0"/>
+    <poly id="garden_TL_crimson_1" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="100.0,980.0 180.0,980.0 180.0,1030.0 100.0,1030.0"/>
+    <poly id="garden_TL_tulip_1" type="flower_bed" color="0.95,0.55,0.30" layer="2" fill="true" shape="200.0,980.0 270.0,980.0 270.0,1030.0 200.0,1030.0"/>
+    <poly id="path_TL_main" type="pathway" color="0.85,0.82,0.75" layer="1" fill="true" shape="60.0,1040.0 300.0,1040.0 300.0,1050.0 60.0,1050.0"/>
+    <poly id="path_TL_cross" type="pathway" color="0.85,0.82,0.75" layer="1" fill="true" shape="145.0,960.0 155.0,960.0 155.0,1140.0 145.0,1140.0"/>
+    <poly id="tree_TL_park_70_1" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="72.8,1130.0 72.0,1132.0 70.0,1132.8 68.0,1132.0 67.2,1130.0 68.0,1128.0 70.0,1127.2 72.0,1128.0"/>
+    <poly id="tree_TL_park_70_2" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="72.5,970.0 71.8,971.8 70.0,972.5 68.2,971.8 67.5,970.0 68.2,968.2 70.0,967.5 71.8,968.2"/>
+    <poly id="tree_TL_park_110_1" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="112.8,1130.0 112.0,1132.0 110.0,1132.8 108.0,1132.0 107.2,1130.0 108.0,1128.0 110.0,1127.2 112.0,1128.0"/>
+    <poly id="tree_TL_park_110_2" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="112.5,970.0 111.8,971.8 110.0,972.5 108.2,971.8 107.5,970.0 108.2,968.2 110.0,967.5 111.8,968.2"/>
+    <poly id="tree_TL_park_150_1" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="152.8,1130.0 152.0,1132.0 150.0,1132.8 148.0,1132.0 147.2,1130.0 148.0,1128.0 150.0,1127.2 152.0,1128.0"/>
+    <poly id="tree_TL_park_150_2" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="152.5,970.0 151.8,971.8 150.0,972.5 148.2,971.8 147.5,970.0 148.2,968.2 150.0,967.5 151.8,968.2"/>
+    <poly id="tree_TL_park_190_1" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="192.8,1130.0 192.0,1132.0 190.0,1132.8 188.0,1132.0 187.2,1130.0 188.0,1128.0 190.0,1127.2 192.0,1128.0"/>
+    <poly id="tree_TL_park_190_2" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="192.5,970.0 191.8,971.8 190.0,972.5 188.2,971.8 187.5,970.0 188.2,968.2 190.0,967.5 191.8,968.2"/>
+    <poly id="tree_TL_park_230_1" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="232.8,1130.0 232.0,1132.0 230.0,1132.8 228.0,1132.0 227.2,1130.0 228.0,1128.0 230.0,1127.2 232.0,1128.0"/>
+    <poly id="tree_TL_park_230_2" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="232.5,970.0 231.8,971.8 230.0,972.5 228.2,971.8 227.5,970.0 228.2,968.2 230.0,967.5 231.8,968.2"/>
+    <poly id="tree_TL_park_270_1" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="272.8,1130.0 272.0,1132.0 270.0,1132.8 268.0,1132.0 267.2,1130.0 268.0,1128.0 270.0,1127.2 272.0,1128.0"/>
+    <poly id="tree_TL_park_270_2" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="272.5,970.0 271.8,971.8 270.0,972.5 268.2,971.8 267.5,970.0 268.2,968.2 270.0,967.5 271.8,968.2"/>
+    <poly id="tree_TL_park_290_1" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="292.8,1130.0 292.0,1132.0 290.0,1132.8 288.0,1132.0 287.2,1130.0 288.0,1128.0 290.0,1127.2 292.0,1128.0"/>
+    <poly id="tree_TL_park_290_2" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="292.5,970.0 291.8,971.8 290.0,972.5 288.2,971.8 287.5,970.0 288.2,968.2 290.0,967.5 291.8,968.2"/>
+    <poly id="bldg_TL_res_1" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="60.0,800.0 140.0,800.0 140.0,835.0 110.0,835.0 110.0,860.0 60.0,860.0"/>
+    <poly id="bldg_TL_res_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="160.0,800.0 220.0,800.0 220.0,860.0 160.0,860.0"/>
+    <poly id="bldg_TL_res_3" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="240.0,800.0 300.0,800.0 300.0,860.0 240.0,860.0"/>
+    <poly id="bldg_TL_res_4" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="60.0,880.0 140.0,880.0 140.0,940.0 117.5,940.0 117.5,915.0 82.5,915.0 82.5,940.0 60.0,940.0"/>
+    <poly id="bldg_TL_res_5" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="160.0,880.0 220.0,880.0 220.0,940.0 160.0,940.0"/>
+    <poly id="bldg_TL_res_6" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="240.0,880.0 300.0,880.0 300.0,940.0 240.0,940.0"/>
+    <poly id="garden_TL_court_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="142.0,810.0 158.0,810.0 158.0,850.0 142.0,850.0"/>
+    <poly id="garden_TL_court_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="222.0,810.0 238.0,810.0 238.0,850.0 222.0,850.0"/>
+    <poly id="garden_TL_court_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="142.0,890.0 158.0,890.0 158.0,930.0 142.0,930.0"/>
+    <poly id="garden_TL_court_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="222.0,890.0 238.0,890.0 238.0,930.0 222.0,930.0"/>
+    <poly id="tree_TL_west_810" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="52.4,810.0 51.7,811.7 50.0,812.4 48.3,811.7 47.6,810.0 48.3,808.3 50.0,807.6 51.7,808.3"/>
+    <poly id="tree_TL_east_810" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="312.4,810.0 311.7,811.7 310.0,812.4 308.3,811.7 307.6,810.0 308.3,808.3 310.0,807.6 311.7,808.3"/>
+    <poly id="tree_TL_west_850" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="52.4,850.0 51.7,851.7 50.0,852.4 48.3,851.7 47.6,850.0 48.3,848.3 50.0,847.6 51.7,848.3"/>
+    <poly id="tree_TL_east_850" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="312.4,850.0 311.7,851.7 310.0,852.4 308.3,851.7 307.6,850.0 308.3,848.3 310.0,847.6 311.7,848.3"/>
+    <poly id="tree_TL_west_890" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="52.4,890.0 51.7,891.7 50.0,892.4 48.3,891.7 47.6,890.0 48.3,888.3 50.0,887.6 51.7,888.3"/>
+    <poly id="tree_TL_east_890" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="312.4,890.0 311.7,891.7 310.0,892.4 308.3,891.7 307.6,890.0 308.3,888.3 310.0,887.6 311.7,888.3"/>
+    <poly id="tree_TL_west_930" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="52.4,930.0 51.7,931.7 50.0,932.4 48.3,931.7 47.6,930.0 48.3,928.3 50.0,927.6 51.7,928.3"/>
+    <poly id="tree_TL_east_930" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="312.4,930.0 311.7,931.7 310.0,932.4 308.3,931.7 307.6,930.0 308.3,928.3 310.0,927.6 311.7,928.3"/>
+    <poly id="bldg_TC_diag_1" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="474.3,841.3 514.4,898.6 485.7,918.7 445.6,861.4"/>
+    <poly id="bldg_TC_corp_1" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="600.0,800.0 720.0,800.0 720.0,840.0 680.0,840.0 680.0,870.0 600.0,870.0"/>
+    <poly id="bldg_TC_corp_2" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="750.0,800.0 880.0,800.0 880.0,870.0 750.0,870.0"/>
+    <poly id="bldg_TC_corp_3" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="910.0,800.0 1030.0,800.0 1030.0,870.0 992.5,870.0 992.5,840.0 947.5,840.0 947.5,870.0 910.0,870.0"/>
+    <poly id="bldg_TC_corp_4" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1060.0,800.0 1180.0,800.0 1180.0,870.0 1060.0,870.0"/>
+    <poly id="bldg_TC_corp_5" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="600.0,900.0 720.0,900.0 720.0,970.0 600.0,970.0"/>
+    <poly id="bldg_TC_corp_6" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="750.0,900.0 880.0,900.0 880.0,970.0 750.0,970.0"/>
+    <poly id="bldg_TC_corp_7" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="910.0,900.0 1030.0,900.0 1030.0,970.0 910.0,970.0"/>
+    <poly id="bldg_TC_corp_8" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1060.0,900.0 1180.0,900.0 1180.0,970.0 1060.0,970.0"/>
+    <poly id="bldg_TC_corp_9" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="600.0,1000.0 720.0,1000.0 720.0,1070.0 600.0,1070.0"/>
+    <poly id="bldg_TC_corp_10" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="750.0,1000.0 880.0,1000.0 880.0,1070.0 750.0,1070.0"/>
+    <poly id="bldg_TC_corp_11" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="910.0,1000.0 1030.0,1000.0 1030.0,1070.0 910.0,1070.0"/>
+    <poly id="bldg_TC_corp_12" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1060.0,1000.0 1180.0,1000.0 1180.0,1070.0 1060.0,1070.0"/>
+    <poly id="park_TC_plaza" type="park" color="0.32,0.65,0.36" layer="1" fill="true" shape="600.0,1090.0 1180.0,1090.0 1180.0,1160.0 600.0,1160.0"/>
+    <poly id="garden_TC_rose" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="640.0,1105.0 740.0,1105.0 740.0,1145.0 640.0,1145.0"/>
+    <poly id="garden_TC_lavender" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="780.0,1105.0 880.0,1105.0 880.0,1145.0 780.0,1145.0"/>
+    <poly id="garden_TC_marigold" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="920.0,1105.0 1020.0,1105.0 1020.0,1145.0 920.0,1145.0"/>
+    <poly id="garden_TC_crimson" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="1060.0,1105.0 1150.0,1105.0 1150.0,1145.0 1060.0,1145.0"/>
+    <poly id="tree_TC_plaza_610" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="612.6,1155.0 611.8,1156.8 610.0,1157.6 608.2,1156.8 607.4,1155.0 608.2,1153.2 610.0,1152.4 611.8,1153.2"/>
+    <poly id="tree_TC_plaza_655" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="657.6,1155.0 656.8,1156.8 655.0,1157.6 653.2,1156.8 652.4,1155.0 653.2,1153.2 655.0,1152.4 656.8,1153.2"/>
+    <poly id="tree_TC_plaza_700" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="702.6,1155.0 701.8,1156.8 700.0,1157.6 698.2,1156.8 697.4,1155.0 698.2,1153.2 700.0,1152.4 701.8,1153.2"/>
+    <poly id="tree_TC_plaza_745" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="747.6,1155.0 746.8,1156.8 745.0,1157.6 743.2,1156.8 742.4,1155.0 743.2,1153.2 745.0,1152.4 746.8,1153.2"/>
+    <poly id="tree_TC_plaza_790" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="792.6,1155.0 791.8,1156.8 790.0,1157.6 788.2,1156.8 787.4,1155.0 788.2,1153.2 790.0,1152.4 791.8,1153.2"/>
+    <poly id="tree_TC_plaza_835" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="837.6,1155.0 836.8,1156.8 835.0,1157.6 833.2,1156.8 832.4,1155.0 833.2,1153.2 835.0,1152.4 836.8,1153.2"/>
+    <poly id="tree_TC_plaza_880" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="882.6,1155.0 881.8,1156.8 880.0,1157.6 878.2,1156.8 877.4,1155.0 878.2,1153.2 880.0,1152.4 881.8,1153.2"/>
+    <poly id="tree_TC_plaza_925" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="927.6,1155.0 926.8,1156.8 925.0,1157.6 923.2,1156.8 922.4,1155.0 923.2,1153.2 925.0,1152.4 926.8,1153.2"/>
+    <poly id="tree_TC_plaza_970" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="972.6,1155.0 971.8,1156.8 970.0,1157.6 968.2,1156.8 967.4,1155.0 968.2,1153.2 970.0,1152.4 971.8,1153.2"/>
+    <poly id="tree_TC_plaza_1015" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1017.6,1155.0 1016.8,1156.8 1015.0,1157.6 1013.2,1156.8 1012.4,1155.0 1013.2,1153.2 1015.0,1152.4 1016.8,1153.2"/>
+    <poly id="tree_TC_plaza_1060" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1062.6,1155.0 1061.8,1156.8 1060.0,1157.6 1058.2,1156.8 1057.4,1155.0 1058.2,1153.2 1060.0,1152.4 1061.8,1153.2"/>
+    <poly id="tree_TC_plaza_1105" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1107.6,1155.0 1106.8,1156.8 1105.0,1157.6 1103.2,1156.8 1102.4,1155.0 1103.2,1153.2 1105.0,1152.4 1106.8,1153.2"/>
+    <poly id="tree_TC_plaza_1150" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1152.6,1155.0 1151.8,1156.8 1150.0,1157.6 1148.2,1156.8 1147.4,1155.0 1148.2,1153.2 1150.0,1152.4 1151.8,1153.2"/>
+    <poly id="tree_TC_south_620" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="622.3,788.0 621.6,789.6 620.0,790.3 618.4,789.6 617.7,788.0 618.4,786.4 620.0,785.7 621.6,786.4"/>
+    <poly id="tree_TC_south_770" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="772.3,788.0 771.6,789.6 770.0,790.3 768.4,789.6 767.7,788.0 768.4,786.4 770.0,785.7 771.6,786.4"/>
+    <poly id="tree_TC_south_820" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="822.3,788.0 821.6,789.6 820.0,790.3 818.4,789.6 817.7,788.0 818.4,786.4 820.0,785.7 821.6,786.4"/>
+    <poly id="tree_TC_south_930" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="932.3,788.0 931.6,789.6 930.0,790.3 928.4,789.6 927.7,788.0 928.4,786.4 930.0,785.7 931.6,786.4"/>
+    <poly id="tree_TC_south_980" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="982.3,788.0 981.6,789.6 980.0,790.3 978.4,789.6 977.7,788.0 978.4,786.4 980.0,785.7 981.6,786.4"/>
+    <poly id="tree_TC_south_1080" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1082.3,788.0 1081.6,789.6 1080.0,790.3 1078.4,789.6 1077.7,788.0 1078.4,786.4 1080.0,785.7 1081.6,786.4"/>
+    <poly id="tree_TC_south_1130" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1132.3,788.0 1131.6,789.6 1130.0,790.3 1128.4,789.6 1127.7,788.0 1128.4,786.4 1130.0,785.7 1131.6,786.4"/>
+    <poly id="bldg_TR_fin_1" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1300.0,800.0 1430.0,800.0 1430.0,890.0 1300.0,890.0"/>
+    <poly id="bldg_TR_fin_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1460.0,800.0 1590.0,800.0 1590.0,855.0 1550.0,855.0 1550.0,890.0 1460.0,890.0"/>
+    <poly id="bldg_TR_fin_3" type="building" color="0.45,0.48,0.52" layer="2" fill="true" shape="1620.0,800.0 1750.0,800.0 1750.0,890.0 1620.0,890.0"/>
+    <poly id="bldg_TR_fin_4" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1770.0,800.0 1850.0,800.0 1850.0,890.0 1770.0,890.0"/>
+    <poly id="bldg_TR_fin_5" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1300.0,920.0 1430.0,920.0 1430.0,1010.0 1300.0,1010.0"/>
+    <poly id="bldg_TR_fin_6" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1460.0,920.0 1590.0,920.0 1590.0,1010.0 1550.0,1010.0 1550.0,975.0 1500.0,975.0 1500.0,1010.0 1460.0,1010.0"/>
+    <poly id="bldg_TR_fin_7" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1620.0,920.0 1750.0,920.0 1750.0,1010.0 1620.0,1010.0"/>
+    <poly id="bldg_TR_fin_8" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1770.0,920.0 1850.0,920.0 1850.0,1010.0 1770.0,1010.0"/>
+    <poly id="bldg_TR_fin_9" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="1300.0,1040.0 1430.0,1040.0 1430.0,1130.0 1300.0,1130.0"/>
+    <poly id="bldg_TR_fin_10" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1460.0,1040.0 1590.0,1040.0 1590.0,1130.0 1460.0,1130.0"/>
+    <poly id="bldg_TR_fin_11" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1620.0,1040.0 1750.0,1040.0 1750.0,1130.0 1620.0,1130.0"/>
+    <poly id="bldg_TR_fin_12" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1770.0,1040.0 1850.0,1040.0 1850.0,1130.0 1770.0,1130.0"/>
+    <poly id="garden_TR_atrium_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1434.0,820.0 1456.0,820.0 1456.0,870.0 1434.0,870.0"/>
+    <poly id="garden_TR_atrium_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="1594.0,820.0 1616.0,820.0 1616.0,870.0 1594.0,870.0"/>
+    <poly id="garden_TR_atrium_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="1434.0,940.0 1456.0,940.0 1456.0,990.0 1434.0,990.0"/>
+    <poly id="garden_TR_atrium_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="1594.0,940.0 1616.0,940.0 1616.0,990.0 1594.0,990.0"/>
+    <poly id="tree_TR_west_810" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1294.5,810.0 1293.8,811.8 1292.0,812.5 1290.2,811.8 1289.5,810.0 1290.2,808.2 1292.0,807.5 1293.8,808.2"/>
+    <poly id="tree_TR_east_810" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1857.5,810.0 1856.8,811.8 1855.0,812.5 1853.2,811.8 1852.5,810.0 1853.2,808.2 1855.0,807.5 1856.8,808.2"/>
+    <poly id="tree_TR_west_850" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1294.5,850.0 1293.8,851.8 1292.0,852.5 1290.2,851.8 1289.5,850.0 1290.2,848.2 1292.0,847.5 1293.8,848.2"/>
+    <poly id="tree_TR_east_850" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1857.5,850.0 1856.8,851.8 1855.0,852.5 1853.2,851.8 1852.5,850.0 1853.2,848.2 1855.0,847.5 1856.8,848.2"/>
+    <poly id="tree_TR_west_930" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1294.5,930.0 1293.8,931.8 1292.0,932.5 1290.2,931.8 1289.5,930.0 1290.2,928.2 1292.0,927.5 1293.8,928.2"/>
+    <poly id="tree_TR_east_930" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1857.5,930.0 1856.8,931.8 1855.0,932.5 1853.2,931.8 1852.5,930.0 1853.2,928.2 1855.0,927.5 1856.8,928.2"/>
+    <poly id="tree_TR_west_970" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1294.5,970.0 1293.8,971.8 1292.0,972.5 1290.2,971.8 1289.5,970.0 1290.2,968.2 1292.0,967.5 1293.8,968.2"/>
+    <poly id="tree_TR_east_970" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1857.5,970.0 1856.8,971.8 1855.0,972.5 1853.2,971.8 1852.5,970.0 1853.2,968.2 1855.0,967.5 1856.8,968.2"/>
+    <poly id="tree_TR_west_1050" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1294.5,1050.0 1293.8,1051.8 1292.0,1052.5 1290.2,1051.8 1289.5,1050.0 1290.2,1048.2 1292.0,1047.5 1293.8,1048.2"/>
+    <poly id="tree_TR_east_1050" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1857.5,1050.0 1856.8,1051.8 1855.0,1052.5 1853.2,1051.8 1852.5,1050.0 1853.2,1048.2 1855.0,1047.5 1856.8,1048.2"/>
+    <poly id="tree_TR_west_1090" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1294.5,1090.0 1293.8,1091.8 1292.0,1092.5 1290.2,1091.8 1289.5,1090.0 1290.2,1088.2 1292.0,1087.5 1293.8,1088.2"/>
+    <poly id="tree_TR_east_1090" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1857.5,1090.0 1856.8,1091.8 1855.0,1092.5 1853.2,1091.8 1852.5,1090.0 1853.2,1088.2 1855.0,1087.5 1856.8,1088.2"/>
+    <poly id="tree_TR_south_1330" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1332.3,788.0 1331.6,789.6 1330.0,790.3 1328.4,789.6 1327.7,788.0 1328.4,786.4 1330.0,785.7 1331.6,786.4"/>
+    <poly id="tree_TR_south_1380" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1382.3,788.0 1381.6,789.6 1380.0,790.3 1378.4,789.6 1377.7,788.0 1378.4,786.4 1380.0,785.7 1381.6,786.4"/>
+    <poly id="tree_TR_south_1490" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1492.3,788.0 1491.6,789.6 1490.0,790.3 1488.4,789.6 1487.7,788.0 1488.4,786.4 1490.0,785.7 1491.6,786.4"/>
+    <poly id="tree_TR_south_1540" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1542.3,788.0 1541.6,789.6 1540.0,790.3 1538.4,789.6 1537.7,788.0 1538.4,786.4 1540.0,785.7 1541.6,786.4"/>
+    <poly id="tree_TR_south_1650" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1652.3,788.0 1651.6,789.6 1650.0,790.3 1648.4,789.6 1647.7,788.0 1648.4,786.4 1650.0,785.7 1651.6,786.4"/>
+    <poly id="tree_TR_south_1700" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1702.3,788.0 1701.6,789.6 1700.0,790.3 1698.4,789.6 1697.7,788.0 1698.4,786.4 1700.0,785.7 1701.6,786.4"/>
+    <poly id="tree_TR_south_1800" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1802.3,788.0 1801.6,789.6 1800.0,790.3 1798.4,789.6 1797.7,788.0 1798.4,786.4 1800.0,785.7 1801.6,786.4"/>
+    <poly id="bldg_TE_comm_1" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1960.0,800.0 2080.0,800.0 2080.0,890.0 1960.0,890.0"/>
+    <poly id="bldg_TE_comm_2" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="2110.0,800.0 2230.0,800.0 2230.0,860.0 2195.0,860.0 2195.0,890.0 2110.0,890.0"/>
+    <poly id="bldg_TE_comm_3" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="2260.0,800.0 2360.0,800.0 2360.0,890.0 2260.0,890.0"/>
+    <poly id="bldg_TE_comm_4" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1960.0,920.0 2080.0,920.0 2080.0,1010.0 1960.0,1010.0"/>
+    <poly id="bldg_TE_comm_5" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="2110.0,920.0 2230.0,920.0 2230.0,1010.0 2110.0,1010.0"/>
+    <poly id="bldg_TE_comm_6" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="2260.0,920.0 2360.0,920.0 2360.0,1010.0 2260.0,1010.0"/>
+    <poly id="park_TE_estate" type="park" color="0.30,0.64,0.35" layer="1" fill="true" shape="1960.0,1035.0 2360.0,1035.0 2360.0,1150.0 1960.0,1150.0"/>
+    <poly id="garden_TE_rose" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1980.0,1055.0 2070.0,1055.0 2070.0,1130.0 1980.0,1130.0"/>
+    <poly id="garden_TE_lavender" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="2100.0,1055.0 2190.0,1055.0 2190.0,1130.0 2100.0,1130.0"/>
+    <poly id="garden_TE_marigold" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="2220.0,1055.0 2310.0,1055.0 2310.0,1130.0 2220.0,1130.0"/>
+    <poly id="tree_TE_park_1970" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1972.7,1140.0 1971.9,1141.9 1970.0,1142.7 1968.1,1141.9 1967.3,1140.0 1968.1,1138.1 1970.0,1137.3 1971.9,1138.1"/>
+    <poly id="tree_TE_park_2010" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2012.7,1140.0 2011.9,1141.9 2010.0,1142.7 2008.1,1141.9 2007.3,1140.0 2008.1,1138.1 2010.0,1137.3 2011.9,1138.1"/>
+    <poly id="tree_TE_park_2050" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2052.7,1140.0 2051.9,1141.9 2050.0,1142.7 2048.1,1141.9 2047.3,1140.0 2048.1,1138.1 2050.0,1137.3 2051.9,1138.1"/>
+    <poly id="tree_TE_park_2090" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2092.7,1140.0 2091.9,1141.9 2090.0,1142.7 2088.1,1141.9 2087.3,1140.0 2088.1,1138.1 2090.0,1137.3 2091.9,1138.1"/>
+    <poly id="tree_TE_park_2130" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2132.7,1140.0 2131.9,1141.9 2130.0,1142.7 2128.1,1141.9 2127.3,1140.0 2128.1,1138.1 2130.0,1137.3 2131.9,1138.1"/>
+    <poly id="tree_TE_park_2170" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2172.7,1140.0 2171.9,1141.9 2170.0,1142.7 2168.1,1141.9 2167.3,1140.0 2168.1,1138.1 2170.0,1137.3 2171.9,1138.1"/>
+    <poly id="tree_TE_park_2210" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="2212.7,1140.0 2211.9,1141.9 2210.0,1142.7 2208.1,1141.9 2207.3,1140.0 2208.1,1138.1 2210.0,1137.3 2211.9,1138.1"/>
+    <poly id="tree_TE_park_2250" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2252.7,1140.0 2251.9,1141.9 2250.0,1142.7 2248.1,1141.9 2247.3,1140.0 2248.1,1138.1 2250.0,1137.3 2251.9,1138.1"/>
+    <poly id="tree_TE_park_2290" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2292.7,1140.0 2291.9,1141.9 2290.0,1142.7 2288.1,1141.9 2287.3,1140.0 2288.1,1138.1 2290.0,1137.3 2291.9,1138.1"/>
+    <poly id="tree_TE_park_2330" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2332.7,1140.0 2331.9,1141.9 2330.0,1142.7 2328.1,1141.9 2327.3,1140.0 2328.1,1138.1 2330.0,1137.3 2331.9,1138.1"/>
+    <poly id="tree_TE_south_1980" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1982.3,788.0 1981.6,789.6 1980.0,790.3 1978.4,789.6 1977.7,788.0 1978.4,786.4 1980.0,785.7 1981.6,786.4"/>
+    <poly id="tree_TE_south_2030" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2032.3,788.0 2031.6,789.6 2030.0,790.3 2028.4,789.6 2027.7,788.0 2028.4,786.4 2030.0,785.7 2031.6,786.4"/>
+    <poly id="tree_TE_south_2130" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2132.3,788.0 2131.6,789.6 2130.0,790.3 2128.4,789.6 2127.7,788.0 2128.4,786.4 2130.0,785.7 2131.6,786.4"/>
+    <poly id="tree_TE_south_2180" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2182.3,788.0 2181.6,789.6 2180.0,790.3 2178.4,789.6 2177.7,788.0 2178.4,786.4 2180.0,785.7 2181.6,786.4"/>
+    <poly id="tree_TE_south_2280" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2282.3,788.0 2281.6,789.6 2280.0,790.3 2278.4,789.6 2277.7,788.0 2278.4,786.4 2280.0,785.7 2281.6,786.4"/>
+    <poly id="tree_TE_south_2330" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2332.3,788.0 2331.6,789.6 2330.0,790.3 2328.4,789.6 2327.7,788.0 2328.4,786.4 2330.0,785.7 2331.6,786.4"/>
+    <poly id="bldg_ML_apt_1" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="60.0,450.0 170.0,450.0 170.0,520.0 60.0,520.0"/>
+    <poly id="bldg_ML_apt_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="200.0,450.0 310.0,450.0 310.0,495.0 275.0,495.0 275.0,520.0 200.0,520.0"/>
+    <poly id="bldg_ML_apt_3" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="340.0,450.0 450.0,450.0 450.0,520.0 340.0,520.0"/>
+    <poly id="bldg_ML_apt_4" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="60.0,550.0 170.0,550.0 170.0,620.0 135.0,620.0 135.0,595.0 95.0,595.0 95.0,620.0 60.0,620.0"/>
+    <poly id="bldg_ML_apt_5" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="200.0,550.0 310.0,550.0 310.0,620.0 200.0,620.0"/>
+    <poly id="bldg_ML_apt_6" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="340.0,550.0 450.0,550.0 450.0,620.0 340.0,620.0"/>
+    <poly id="bldg_ML_apt_7" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="60.0,645.0 170.0,645.0 170.0,710.0 60.0,710.0"/>
+    <poly id="bldg_ML_apt_8" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="200.0,645.0 310.0,645.0 310.0,710.0 200.0,710.0"/>
+    <poly id="bldg_ML_apt_9" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="340.0,645.0 450.0,645.0 450.0,710.0 340.0,710.0"/>
+    <poly id="garden_ML_court_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="174.0,460.0 196.0,460.0 196.0,510.0 174.0,510.0"/>
+    <poly id="garden_ML_court_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="314.0,460.0 336.0,460.0 336.0,510.0 314.0,510.0"/>
+    <poly id="garden_ML_court_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="174.0,560.0 196.0,560.0 196.0,610.0 174.0,610.0"/>
+    <poly id="garden_ML_court_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="314.0,560.0 336.0,560.0 336.0,610.0 314.0,610.0"/>
+    <poly id="tree_ML_west_460" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="52.5,460.0 51.8,461.8 50.0,462.5 48.2,461.8 47.5,460.0 48.2,458.2 50.0,457.5 51.8,458.2"/>
+    <poly id="tree_ML_west_500" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="52.5,500.0 51.8,501.8 50.0,502.5 48.2,501.8 47.5,500.0 48.2,498.2 50.0,497.5 51.8,498.2"/>
+    <poly id="tree_ML_west_560" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="52.5,560.0 51.8,561.8 50.0,562.5 48.2,561.8 47.5,560.0 48.2,558.2 50.0,557.5 51.8,558.2"/>
+    <poly id="tree_ML_west_600" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="52.5,600.0 51.8,601.8 50.0,602.5 48.2,601.8 47.5,600.0 48.2,598.2 50.0,597.5 51.8,598.2"/>
+    <poly id="tree_ML_west_660" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="52.5,660.0 51.8,661.8 50.0,662.5 48.2,661.8 47.5,660.0 48.2,658.2 50.0,657.5 51.8,658.2"/>
+    <poly id="tree_ML_west_700" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="52.5,700.0 51.8,701.8 50.0,702.5 48.2,701.8 47.5,700.0 48.2,698.2 50.0,697.5 51.8,698.2"/>
+    <poly id="tree_ML_south_80" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="82.3,438.0 81.6,439.6 80.0,440.3 78.4,439.6 77.7,438.0 78.4,436.4 80.0,435.7 81.6,436.4"/>
+    <poly id="tree_ML_north_80" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="82.3,718.0 81.6,719.6 80.0,720.3 78.4,719.6 77.7,718.0 78.4,716.4 80.0,715.7 81.6,716.4"/>
+    <poly id="tree_ML_south_130" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="132.3,438.0 131.6,439.6 130.0,440.3 128.4,439.6 127.7,438.0 128.4,436.4 130.0,435.7 131.6,436.4"/>
+    <poly id="tree_ML_north_130" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="132.3,718.0 131.6,719.6 130.0,720.3 128.4,719.6 127.7,718.0 128.4,716.4 130.0,715.7 131.6,716.4"/>
+    <poly id="tree_ML_south_220" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="222.3,438.0 221.6,439.6 220.0,440.3 218.4,439.6 217.7,438.0 218.4,436.4 220.0,435.7 221.6,436.4"/>
+    <poly id="tree_ML_north_220" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="222.3,718.0 221.6,719.6 220.0,720.3 218.4,719.6 217.7,718.0 218.4,716.4 220.0,715.7 221.6,716.4"/>
+    <poly id="tree_ML_south_270" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="272.3,438.0 271.6,439.6 270.0,440.3 268.4,439.6 267.7,438.0 268.4,436.4 270.0,435.7 271.6,436.4"/>
+    <poly id="tree_ML_north_270" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="272.3,718.0 271.6,719.6 270.0,720.3 268.4,719.6 267.7,718.0 268.4,716.4 270.0,715.7 271.6,716.4"/>
+    <poly id="tree_ML_south_360" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="362.3,438.0 361.6,439.6 360.0,440.3 358.4,439.6 357.7,438.0 358.4,436.4 360.0,435.7 361.6,436.4"/>
+    <poly id="tree_ML_north_360" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="362.3,718.0 361.6,719.6 360.0,720.3 358.4,719.6 357.7,718.0 358.4,716.4 360.0,715.7 361.6,716.4"/>
+    <poly id="tree_ML_south_410" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="412.3,438.0 411.6,439.6 410.0,440.3 408.4,439.6 407.7,438.0 408.4,436.4 410.0,435.7 411.6,436.4"/>
+    <poly id="tree_ML_north_410" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="412.3,718.0 411.6,719.6 410.0,720.3 408.4,719.6 407.7,718.0 408.4,716.4 410.0,715.7 411.6,716.4"/>
+    <poly id="bldg_MC_tech_1" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="620.0,450.0 730.0,450.0 730.0,520.0 620.0,520.0"/>
+    <poly id="bldg_MC_tech_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="760.0,450.0 870.0,450.0 870.0,495.0 835.0,495.0 835.0,520.0 760.0,520.0"/>
+    <poly id="bldg_MC_tech_3" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="900.0,450.0 1010.0,450.0 1010.0,520.0 900.0,520.0"/>
+    <poly id="bldg_MC_tech_4" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1040.0,450.0 1140.0,450.0 1140.0,520.0 1040.0,520.0"/>
+    <poly id="bldg_MC_tech_6" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="760.0,550.0 870.0,550.0 870.0,620.0 760.0,620.0"/>
+    <poly id="bldg_MC_tech_7" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="900.0,550.0 1010.0,550.0 1010.0,620.0 900.0,620.0"/>
+    <poly id="bldg_MC_tech_8" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1040.0,550.0 1140.0,550.0 1140.0,620.0 1040.0,620.0"/>
+    <poly id="bldg_MC_tech_9" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="620.0,645.0 730.0,645.0 730.0,710.0 620.0,710.0"/>
+    <poly id="bldg_MC_tech_10" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="760.0,645.0 870.0,645.0 870.0,710.0 760.0,710.0"/>
+    <poly id="bldg_MC_tech_11" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="900.0,645.0 1010.0,645.0 1010.0,710.0 900.0,710.0"/>
+    <poly id="bldg_MC_tech_12" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1040.0,645.0 1140.0,645.0 1140.0,710.0 1040.0,710.0"/>
+    <poly id="garden_MC_atrium_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="734.0,460.0 756.0,460.0 756.0,510.0 734.0,510.0"/>
+    <poly id="garden_MC_atrium_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="874.0,460.0 896.0,460.0 896.0,510.0 874.0,510.0"/>
+    <poly id="garden_MC_atrium_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="1014.0,460.0 1036.0,460.0 1036.0,510.0 1014.0,510.0"/>
+    <poly id="garden_MC_atrium_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="734.0,560.0 756.0,560.0 756.0,610.0 734.0,610.0"/>
+    <poly id="garden_MC_atrium_5" type="flower_bed" color="0.95,0.55,0.30" layer="2" fill="true" shape="874.0,560.0 896.0,560.0 896.0,610.0 874.0,610.0"/>
+    <poly id="garden_MC_atrium_6" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1014.0,560.0 1036.0,560.0 1036.0,610.0 1014.0,610.0"/>
+    <poly id="tree_MC_south_630" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="632.3,442.0 631.6,443.6 630.0,444.3 628.4,443.6 627.7,442.0 628.4,440.4 630.0,439.7 631.6,440.4"/>
+    <poly id="tree_MC_north_630" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="632.3,718.0 631.6,719.6 630.0,720.3 628.4,719.6 627.7,718.0 628.4,716.4 630.0,715.7 631.6,716.4"/>
+    <poly id="tree_MC_south_675" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="677.3,442.0 676.6,443.6 675.0,444.3 673.4,443.6 672.7,442.0 673.4,440.4 675.0,439.7 676.6,440.4"/>
+    <poly id="tree_MC_north_675" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="677.3,718.0 676.6,719.6 675.0,720.3 673.4,719.6 672.7,718.0 673.4,716.4 675.0,715.7 676.6,716.4"/>
+    <poly id="tree_MC_south_770" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="772.3,442.0 771.6,443.6 770.0,444.3 768.4,443.6 767.7,442.0 768.4,440.4 770.0,439.7 771.6,440.4"/>
+    <poly id="tree_MC_north_770" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="772.3,718.0 771.6,719.6 770.0,720.3 768.4,719.6 767.7,718.0 768.4,716.4 770.0,715.7 771.6,716.4"/>
+    <poly id="tree_MC_south_815" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="817.3,442.0 816.6,443.6 815.0,444.3 813.4,443.6 812.7,442.0 813.4,440.4 815.0,439.7 816.6,440.4"/>
+    <poly id="tree_MC_north_815" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="817.3,718.0 816.6,719.6 815.0,720.3 813.4,719.6 812.7,718.0 813.4,716.4 815.0,715.7 816.6,716.4"/>
+    <poly id="tree_MC_south_910" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="912.3,442.0 911.6,443.6 910.0,444.3 908.4,443.6 907.7,442.0 908.4,440.4 910.0,439.7 911.6,440.4"/>
+    <poly id="tree_MC_north_910" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="912.3,718.0 911.6,719.6 910.0,720.3 908.4,719.6 907.7,718.0 908.4,716.4 910.0,715.7 911.6,716.4"/>
+    <poly id="tree_MC_south_955" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="957.3,442.0 956.6,443.6 955.0,444.3 953.4,443.6 952.7,442.0 953.4,440.4 955.0,439.7 956.6,440.4"/>
+    <poly id="tree_MC_north_955" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="957.3,718.0 956.6,719.6 955.0,720.3 953.4,719.6 952.7,718.0 953.4,716.4 955.0,715.7 956.6,716.4"/>
+    <poly id="tree_MC_south_1050" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1052.3,442.0 1051.6,443.6 1050.0,444.3 1048.4,443.6 1047.7,442.0 1048.4,440.4 1050.0,439.7 1051.6,440.4"/>
+    <poly id="tree_MC_north_1050" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1052.3,718.0 1051.6,719.6 1050.0,720.3 1048.4,719.6 1047.7,718.0 1048.4,716.4 1050.0,715.7 1051.6,716.4"/>
+    <poly id="tree_MC_south_1095" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1097.3,442.0 1096.6,443.6 1095.0,444.3 1093.4,443.6 1092.7,442.0 1093.4,440.4 1095.0,439.7 1096.6,440.4"/>
+    <poly id="tree_MC_north_1095" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1097.3,718.0 1096.6,719.6 1095.0,720.3 1093.4,719.6 1092.7,718.0 1093.4,716.4 1095.0,715.7 1096.6,716.4"/>
+    <poly id="bldg_MR_med_1" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1280.0,450.0 1400.0,450.0 1400.0,525.0 1280.0,525.0"/>
+    <poly id="bldg_MR_med_2" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1430.0,450.0 1550.0,450.0 1550.0,500.0 1515.0,500.0 1515.0,525.0 1430.0,525.0"/>
+    <poly id="bldg_MR_med_3" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1580.0,450.0 1700.0,450.0 1700.0,525.0 1580.0,525.0"/>
+    <poly id="bldg_MR_med_4" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1730.0,450.0 1845.0,450.0 1845.0,525.0 1730.0,525.0"/>
+    <poly id="bldg_MR_med_5" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1280.0,545.0 1400.0,545.0 1400.0,620.0 1360.0,620.0 1360.0,595.0 1320.0,595.0 1320.0,620.0 1280.0,620.0"/>
+    <poly id="bldg_MR_med_6" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1430.0,545.0 1550.0,545.0 1550.0,620.0 1430.0,620.0"/>
+    <poly id="bldg_MR_med_7" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1580.0,545.0 1700.0,545.0 1700.0,620.0 1580.0,620.0"/>
+    <poly id="bldg_MR_med_8" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="1730.0,545.0 1845.0,545.0 1845.0,620.0 1730.0,620.0"/>
+    <poly id="bldg_MR_med_9" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1280.0,640.0 1400.0,640.0 1400.0,710.0 1280.0,710.0"/>
+    <poly id="bldg_MR_med_10" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1430.0,640.0 1550.0,640.0 1550.0,710.0 1430.0,710.0"/>
+    <poly id="bldg_MR_med_11" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1580.0,640.0 1700.0,640.0 1700.0,710.0 1580.0,710.0"/>
+    <poly id="bldg_MR_med_12" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1730.0,640.0 1845.0,640.0 1845.0,710.0 1730.0,710.0"/>
+    <poly id="garden_MR_court_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1404.0,465.0 1426.0,465.0 1426.0,515.0 1404.0,515.0"/>
+    <poly id="garden_MR_court_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="1554.0,465.0 1576.0,465.0 1576.0,515.0 1554.0,515.0"/>
+    <poly id="garden_MR_court_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="1704.0,465.0 1726.0,465.0 1726.0,515.0 1704.0,515.0"/>
+    <poly id="garden_MR_court_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="1404.0,560.0 1426.0,560.0 1426.0,610.0 1404.0,610.0"/>
+    <poly id="garden_MR_court_5" type="flower_bed" color="0.95,0.55,0.30" layer="2" fill="true" shape="1554.0,560.0 1576.0,560.0 1576.0,610.0 1554.0,610.0"/>
+    <poly id="garden_MR_court_6" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1704.0,560.0 1726.0,560.0 1726.0,610.0 1704.0,610.0"/>
+    <poly id="tree_MR_south_1300" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1302.3,442.0 1301.6,443.6 1300.0,444.3 1298.4,443.6 1297.7,442.0 1298.4,440.4 1300.0,439.7 1301.6,440.4"/>
+    <poly id="tree_MR_north_1300" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1302.3,718.0 1301.6,719.6 1300.0,720.3 1298.4,719.6 1297.7,718.0 1298.4,716.4 1300.0,715.7 1301.6,716.4"/>
+    <poly id="tree_MR_south_1350" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1352.3,442.0 1351.6,443.6 1350.0,444.3 1348.4,443.6 1347.7,442.0 1348.4,440.4 1350.0,439.7 1351.6,440.4"/>
+    <poly id="tree_MR_north_1350" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1352.3,718.0 1351.6,719.6 1350.0,720.3 1348.4,719.6 1347.7,718.0 1348.4,716.4 1350.0,715.7 1351.6,716.4"/>
+    <poly id="tree_MR_south_1450" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1452.3,442.0 1451.6,443.6 1450.0,444.3 1448.4,443.6 1447.7,442.0 1448.4,440.4 1450.0,439.7 1451.6,440.4"/>
+    <poly id="tree_MR_north_1450" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1452.3,718.0 1451.6,719.6 1450.0,720.3 1448.4,719.6 1447.7,718.0 1448.4,716.4 1450.0,715.7 1451.6,716.4"/>
+    <poly id="tree_MR_south_1500" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1502.3,442.0 1501.6,443.6 1500.0,444.3 1498.4,443.6 1497.7,442.0 1498.4,440.4 1500.0,439.7 1501.6,440.4"/>
+    <poly id="tree_MR_north_1500" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1502.3,718.0 1501.6,719.6 1500.0,720.3 1498.4,719.6 1497.7,718.0 1498.4,716.4 1500.0,715.7 1501.6,716.4"/>
+    <poly id="tree_MR_south_1600" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1602.3,442.0 1601.6,443.6 1600.0,444.3 1598.4,443.6 1597.7,442.0 1598.4,440.4 1600.0,439.7 1601.6,440.4"/>
+    <poly id="tree_MR_north_1600" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1602.3,718.0 1601.6,719.6 1600.0,720.3 1598.4,719.6 1597.7,718.0 1598.4,716.4 1600.0,715.7 1601.6,716.4"/>
+    <poly id="tree_MR_south_1650" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1652.3,442.0 1651.6,443.6 1650.0,444.3 1648.4,443.6 1647.7,442.0 1648.4,440.4 1650.0,439.7 1651.6,440.4"/>
+    <poly id="tree_MR_north_1650" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1652.3,718.0 1651.6,719.6 1650.0,720.3 1648.4,719.6 1647.7,718.0 1648.4,716.4 1650.0,715.7 1651.6,716.4"/>
+    <poly id="tree_MR_south_1750" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1752.3,442.0 1751.6,443.6 1750.0,444.3 1748.4,443.6 1747.7,442.0 1748.4,440.4 1750.0,439.7 1751.6,440.4"/>
+    <poly id="tree_MR_north_1750" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1752.3,718.0 1751.6,719.6 1750.0,720.3 1748.4,719.6 1747.7,718.0 1748.4,716.4 1750.0,715.7 1751.6,716.4"/>
+    <poly id="tree_MR_south_1800" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1802.3,442.0 1801.6,443.6 1800.0,444.3 1798.4,443.6 1797.7,442.0 1798.4,440.4 1800.0,439.7 1801.6,440.4"/>
+    <poly id="tree_MR_north_1800" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1802.3,718.0 1801.6,719.6 1800.0,720.3 1798.4,719.6 1797.7,718.0 1798.4,716.4 1800.0,715.7 1801.6,716.4"/>
+    <poly id="bldg_ME_com_1" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1960.0,450.0 2080.0,450.0 2080.0,525.0 1960.0,525.0"/>
+    <poly id="bldg_ME_com_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="2105.0,450.0 2225.0,450.0 2225.0,500.0 2190.0,500.0 2190.0,525.0 2105.0,525.0"/>
+    <poly id="bldg_ME_com_3" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="2250.0,450.0 2360.0,450.0 2360.0,525.0 2250.0,525.0"/>
+    <poly id="bldg_ME_com_4" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1960.0,545.0 2080.0,545.0 2080.0,620.0 1960.0,620.0"/>
+    <poly id="bldg_ME_com_5" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="2105.0,545.0 2225.0,545.0 2225.0,620.0 2105.0,620.0"/>
+    <poly id="bldg_ME_com_6" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="2250.0,545.0 2360.0,545.0 2360.0,620.0 2250.0,620.0"/>
+    <poly id="bldg_ME_com_7" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1960.0,640.0 2080.0,640.0 2080.0,710.0 1960.0,710.0"/>
+    <poly id="bldg_ME_com_8" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="2105.0,640.0 2225.0,640.0 2225.0,710.0 2105.0,710.0"/>
+    <poly id="bldg_ME_com_9" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="2250.0,640.0 2360.0,640.0 2360.0,710.0 2250.0,710.0"/>
+    <poly id="garden_ME_promenade_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="2084.0,465.0 2101.0,465.0 2101.0,515.0 2084.0,515.0"/>
+    <poly id="garden_ME_promenade_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="2229.0,465.0 2246.0,465.0 2246.0,515.0 2229.0,515.0"/>
+    <poly id="garden_ME_promenade_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="2084.0,560.0 2101.0,560.0 2101.0,610.0 2084.0,610.0"/>
+    <poly id="garden_ME_promenade_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="2229.0,560.0 2246.0,560.0 2246.0,610.0 2229.0,610.0"/>
+    <poly id="tree_ME_south_1980" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1982.3,442.0 1981.6,443.6 1980.0,444.3 1978.4,443.6 1977.7,442.0 1978.4,440.4 1980.0,439.7 1981.6,440.4"/>
+    <poly id="tree_ME_north_1980" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1982.3,718.0 1981.6,719.6 1980.0,720.3 1978.4,719.6 1977.7,718.0 1978.4,716.4 1980.0,715.7 1981.6,716.4"/>
+    <poly id="tree_ME_south_2030" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2032.3,442.0 2031.6,443.6 2030.0,444.3 2028.4,443.6 2027.7,442.0 2028.4,440.4 2030.0,439.7 2031.6,440.4"/>
+    <poly id="tree_ME_north_2030" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="2032.3,718.0 2031.6,719.6 2030.0,720.3 2028.4,719.6 2027.7,718.0 2028.4,716.4 2030.0,715.7 2031.6,716.4"/>
+    <poly id="tree_ME_south_2130" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2132.3,442.0 2131.6,443.6 2130.0,444.3 2128.4,443.6 2127.7,442.0 2128.4,440.4 2130.0,439.7 2131.6,440.4"/>
+    <poly id="tree_ME_north_2130" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2132.3,718.0 2131.6,719.6 2130.0,720.3 2128.4,719.6 2127.7,718.0 2128.4,716.4 2130.0,715.7 2131.6,716.4"/>
+    <poly id="tree_ME_south_2180" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2182.3,442.0 2181.6,443.6 2180.0,444.3 2178.4,443.6 2177.7,442.0 2178.4,440.4 2180.0,439.7 2181.6,440.4"/>
+    <poly id="tree_ME_north_2180" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="2182.3,718.0 2181.6,719.6 2180.0,720.3 2178.4,719.6 2177.7,718.0 2178.4,716.4 2180.0,715.7 2181.6,716.4"/>
+    <poly id="tree_ME_south_2280" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2282.3,442.0 2281.6,443.6 2280.0,444.3 2278.4,443.6 2277.7,442.0 2278.4,440.4 2280.0,439.7 2281.6,440.4"/>
+    <poly id="tree_ME_north_2280" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2282.3,718.0 2281.6,719.6 2280.0,720.3 2278.4,719.6 2277.7,718.0 2278.4,716.4 2280.0,715.7 2281.6,716.4"/>
+    <poly id="tree_ME_south_2330" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2332.3,442.0 2331.6,443.6 2330.0,444.3 2328.4,443.6 2327.7,442.0 2328.4,440.4 2330.0,439.7 2331.6,440.4"/>
+    <poly id="tree_ME_north_2330" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="2332.3,718.0 2331.6,719.6 2330.0,720.3 2328.4,719.6 2327.7,718.0 2328.4,716.4 2330.0,715.7 2331.6,716.4"/>
+    <poly id="bldg_BL_edu_1" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="60.0,60.0 180.0,60.0 180.0,110.0 140.0,110.0 140.0,140.0 60.0,140.0"/>
+    <poly id="bldg_BL_edu_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="210.0,60.0 330.0,60.0 330.0,140.0 210.0,140.0"/>
+    <poly id="bldg_BL_edu_3" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="360.0,60.0 480.0,60.0 480.0,140.0 360.0,140.0"/>
+    <poly id="bldg_BL_edu_4" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="60.0,170.0 180.0,170.0 180.0,250.0 60.0,250.0"/>
+    <poly id="bldg_BL_edu_5" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="210.0,170.0 330.0,170.0 330.0,250.0 292.5,250.0 292.5,220.0 247.5,220.0 247.5,250.0 210.0,250.0"/>
+    <poly id="bldg_BL_edu_6" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="360.0,170.0 480.0,170.0 480.0,250.0 360.0,250.0"/>
+    <poly id="bldg_BL_edu_7" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="60.0,275.0 180.0,275.0 180.0,350.0 60.0,350.0"/>
+    <poly id="bldg_BL_edu_8" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="210.0,275.0 330.0,275.0 330.0,350.0 210.0,350.0"/>
+    <poly id="bldg_BL_edu_9" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="360.0,275.0 480.0,275.0 480.0,350.0 360.0,350.0"/>
+    <poly id="garden_BL_quad_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="184.0,80.0 206.0,80.0 206.0,130.0 184.0,130.0"/>
+    <poly id="garden_BL_quad_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="334.0,80.0 356.0,80.0 356.0,130.0 334.0,130.0"/>
+    <poly id="garden_BL_quad_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="184.0,190.0 206.0,190.0 206.0,240.0 184.0,240.0"/>
+    <poly id="garden_BL_quad_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="334.0,190.0 356.0,190.0 356.0,240.0 334.0,240.0"/>
+    <poly id="tree_BL_south_75" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="77.5,50.0 76.8,51.8 75.0,52.5 73.2,51.8 72.5,50.0 73.2,48.2 75.0,47.5 76.8,48.2"/>
+    <poly id="tree_BL_south_130" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="132.5,50.0 131.8,51.8 130.0,52.5 128.2,51.8 127.5,50.0 128.2,48.2 130.0,47.5 131.8,48.2"/>
+    <poly id="tree_BL_south_225" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="227.5,50.0 226.8,51.8 225.0,52.5 223.2,51.8 222.5,50.0 223.2,48.2 225.0,47.5 226.8,48.2"/>
+    <poly id="tree_BL_south_280" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="282.5,50.0 281.8,51.8 280.0,52.5 278.2,51.8 277.5,50.0 278.2,48.2 280.0,47.5 281.8,48.2"/>
+    <poly id="tree_BL_south_375" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="377.5,50.0 376.8,51.8 375.0,52.5 373.2,51.8 372.5,50.0 373.2,48.2 375.0,47.5 376.8,48.2"/>
+    <poly id="tree_BL_south_430" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="432.5,50.0 431.8,51.8 430.0,52.5 428.2,51.8 427.5,50.0 428.2,48.2 430.0,47.5 431.8,48.2"/>
+    <poly id="park_BM_botanical" type="park" color="0.28,0.64,0.32" layer="1" fill="true" shape="620.0,60.0 880.0,60.0 880.0,350.0 620.0,350.0"/>
+    <poly id="garden_BM_rose_parterre" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="640.0,240.0 740.0,240.0 740.0,330.0 640.0,330.0"/>
+    <poly id="garden_BM_lavender_parterre" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="760.0,240.0 860.0,240.0 860.0,330.0 760.0,330.0"/>
+    <poly id="garden_BM_marigold_parterre" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="640.0,80.0 740.0,80.0 740.0,170.0 640.0,170.0"/>
+    <poly id="garden_BM_crimson_parterre" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="760.0,80.0 860.0,80.0 860.0,170.0 760.0,170.0"/>
+    <poly id="garden_BM_center_circle" type="flower_bed" color="0.95,0.55,0.30" layer="2" fill="true" shape="700.0,185.0 800.0,185.0 800.0,225.0 700.0,225.0"/>
+    <poly id="path_BM_main" type="pathway" color="0.88,0.85,0.78" layer="1" fill="true" shape="620.0,195.0 880.0,195.0 880.0,215.0 620.0,215.0"/>
+    <poly id="path_BM_cross" type="pathway" color="0.88,0.85,0.78" layer="1" fill="true" shape="740.0,60.0 760.0,60.0 760.0,350.0 740.0,350.0"/>
+    <poly id="tree_BM_north_630" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="632.7,340.0 631.9,341.9 630.0,342.7 628.1,341.9 627.3,340.0 628.1,338.1 630.0,337.3 631.9,338.1"/>
+    <poly id="tree_BM_south_630" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="632.7,70.0 631.9,71.9 630.0,72.7 628.1,71.9 627.3,70.0 628.1,68.1 630.0,67.3 631.9,68.1"/>
+    <poly id="tree_BM_north_690" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="692.7,340.0 691.9,341.9 690.0,342.7 688.1,341.9 687.3,340.0 688.1,338.1 690.0,337.3 691.9,338.1"/>
+    <poly id="tree_BM_south_690" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="692.7,70.0 691.9,71.9 690.0,72.7 688.1,71.9 687.3,70.0 688.1,68.1 690.0,67.3 691.9,68.1"/>
+    <poly id="tree_BM_north_750" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="752.7,340.0 751.9,341.9 750.0,342.7 748.1,341.9 747.3,340.0 748.1,338.1 750.0,337.3 751.9,338.1"/>
+    <poly id="tree_BM_south_750" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="752.7,70.0 751.9,71.9 750.0,72.7 748.1,71.9 747.3,70.0 748.1,68.1 750.0,67.3 751.9,68.1"/>
+    <poly id="tree_BM_north_810" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="812.7,340.0 811.9,341.9 810.0,342.7 808.1,341.9 807.3,340.0 808.1,338.1 810.0,337.3 811.9,338.1"/>
+    <poly id="tree_BM_south_810" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="812.7,70.0 811.9,71.9 810.0,72.7 808.1,71.9 807.3,70.0 808.1,68.1 810.0,67.3 811.9,68.1"/>
+    <poly id="tree_BM_north_870" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="872.7,340.0 871.9,341.9 870.0,342.7 868.1,341.9 867.3,340.0 868.1,338.1 870.0,337.3 871.9,338.1"/>
+    <poly id="tree_BM_south_870" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="872.7,70.0 871.9,71.9 870.0,72.7 868.1,71.9 867.3,70.0 868.1,68.1 870.0,67.3 871.9,68.1"/>
+    <poly id="tree_BM_west_130" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="632.5,130.0 631.8,131.8 630.0,132.5 628.2,131.8 627.5,130.0 628.2,128.2 630.0,127.5 631.8,128.2"/>
+    <poly id="tree_BM_east_130" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="872.5,130.0 871.8,131.8 870.0,132.5 868.2,131.8 867.5,130.0 868.2,128.2 870.0,127.5 871.8,128.2"/>
+    <poly id="tree_BM_west_190" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="632.5,190.0 631.8,191.8 630.0,192.5 628.2,191.8 627.5,190.0 628.2,188.2 630.0,187.5 631.8,188.2"/>
+    <poly id="tree_BM_east_190" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="872.5,190.0 871.8,191.8 870.0,192.5 868.2,191.8 867.5,190.0 868.2,188.2 870.0,187.5 871.8,188.2"/>
+    <poly id="tree_BM_west_250" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="632.5,250.0 631.8,251.8 630.0,252.5 628.2,251.8 627.5,250.0 628.2,248.2 630.0,247.5 631.8,248.2"/>
+    <poly id="tree_BM_east_250" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="872.5,250.0 871.8,251.8 870.0,252.5 868.2,251.8 867.5,250.0 868.2,248.2 870.0,247.5 871.8,248.2"/>
+    <poly id="tree_BM_west_310" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="632.5,310.0 631.8,311.8 630.0,312.5 628.2,311.8 627.5,310.0 628.2,308.2 630.0,307.5 631.8,308.2"/>
+    <poly id="tree_BM_east_310" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="872.5,310.0 871.8,311.8 870.0,312.5 868.2,311.8 867.5,310.0 868.2,308.2 870.0,307.5 871.8,308.2"/>
+    <poly id="bldg_BM_res_1" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="910.0,60.0 1010.0,60.0 1010.0,140.0 910.0,140.0"/>
+    <poly id="bldg_BM_res_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1040.0,60.0 1140.0,60.0 1140.0,115.0 1105.0,115.0 1105.0,140.0 1040.0,140.0"/>
+    <poly id="bldg_BM_res_3" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="910.0,170.0 1010.0,170.0 1010.0,250.0 980.0,250.0 980.0,225.0 940.0,225.0 940.0,250.0 910.0,250.0"/>
+    <poly id="bldg_BM_res_4" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1040.0,170.0 1140.0,170.0 1140.0,250.0 1040.0,250.0"/>
+    <poly id="bldg_BM_res_5" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="910.0,275.0 1010.0,275.0 1010.0,350.0 910.0,350.0"/>
+    <poly id="bldg_BM_res_6" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="1040.0,275.0 1140.0,275.0 1140.0,350.0 1040.0,350.0"/>
+    <poly id="garden_BM_court_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1014.0,80.0 1036.0,80.0 1036.0,130.0 1014.0,130.0"/>
+    <poly id="garden_BM_court_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="1014.0,190.0 1036.0,190.0 1036.0,240.0 1014.0,240.0"/>
+    <poly id="garden_BM_court_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="1014.0,290.0 1036.0,290.0 1036.0,340.0 1014.0,340.0"/>
+    <poly id="bldg_BR_com_1" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1270.0,60.0 1390.0,60.0 1390.0,140.0 1270.0,140.0"/>
+    <poly id="bldg_BR_com_2" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1420.0,60.0 1540.0,60.0 1540.0,115.0 1505.0,115.0 1505.0,140.0 1420.0,140.0"/>
+    <poly id="bldg_BR_com_3" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1570.0,60.0 1690.0,60.0 1690.0,140.0 1570.0,140.0"/>
+    <poly id="bldg_BR_com_4" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1720.0,60.0 1845.0,60.0 1845.0,140.0 1720.0,140.0"/>
+    <poly id="bldg_BR_com_5" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1270.0,170.0 1390.0,170.0 1390.0,250.0 1350.0,250.0 1350.0,225.0 1310.0,225.0 1310.0,250.0 1270.0,250.0"/>
+    <poly id="bldg_BR_com_6" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="1420.0,170.0 1540.0,170.0 1540.0,250.0 1420.0,250.0"/>
+    <poly id="bldg_BR_com_7" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1570.0,170.0 1690.0,170.0 1690.0,250.0 1570.0,250.0"/>
+    <poly id="bldg_BR_com_8" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="1720.0,170.0 1845.0,170.0 1845.0,250.0 1720.0,250.0"/>
+    <poly id="bldg_BR_com_9" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1270.0,275.0 1390.0,275.0 1390.0,350.0 1270.0,350.0"/>
+    <poly id="bldg_BR_com_10" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="1420.0,275.0 1540.0,275.0 1540.0,350.0 1420.0,350.0"/>
+    <poly id="bldg_BR_com_11" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1570.0,275.0 1690.0,275.0 1690.0,350.0 1570.0,350.0"/>
+    <poly id="bldg_BR_com_12" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1720.0,275.0 1845.0,275.0 1845.0,350.0 1720.0,350.0"/>
+    <poly id="garden_BR_court_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1394.0,80.0 1416.0,80.0 1416.0,130.0 1394.0,130.0"/>
+    <poly id="garden_BR_court_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="1544.0,80.0 1566.0,80.0 1566.0,130.0 1544.0,130.0"/>
+    <poly id="garden_BR_court_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="1694.0,80.0 1716.0,80.0 1716.0,130.0 1694.0,130.0"/>
+    <poly id="garden_BR_court_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="1394.0,190.0 1416.0,190.0 1416.0,240.0 1394.0,240.0"/>
+    <poly id="garden_BR_court_5" type="flower_bed" color="0.95,0.55,0.30" layer="2" fill="true" shape="1544.0,190.0 1566.0,190.0 1566.0,240.0 1544.0,240.0"/>
+    <poly id="garden_BR_court_6" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="1694.0,190.0 1716.0,190.0 1716.0,240.0 1694.0,240.0"/>
+    <poly id="tree_BR_south_1300" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="1302.5,50.0 1301.8,51.8 1300.0,52.5 1298.2,51.8 1297.5,50.0 1298.2,48.2 1300.0,47.5 1301.8,48.2"/>
+    <poly id="tree_BR_south_1350" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1352.5,50.0 1351.8,51.8 1350.0,52.5 1348.2,51.8 1347.5,50.0 1348.2,48.2 1350.0,47.5 1351.8,48.2"/>
+    <poly id="tree_BR_south_1450" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1452.5,50.0 1451.8,51.8 1450.0,52.5 1448.2,51.8 1447.5,50.0 1448.2,48.2 1450.0,47.5 1451.8,48.2"/>
+    <poly id="tree_BR_south_1500" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1502.5,50.0 1501.8,51.8 1500.0,52.5 1498.2,51.8 1497.5,50.0 1498.2,48.2 1500.0,47.5 1501.8,48.2"/>
+    <poly id="tree_BR_south_1600" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1602.5,50.0 1601.8,51.8 1600.0,52.5 1598.2,51.8 1597.5,50.0 1598.2,48.2 1600.0,47.5 1601.8,48.2"/>
+    <poly id="tree_BR_south_1650" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1652.5,50.0 1651.8,51.8 1650.0,52.5 1648.2,51.8 1647.5,50.0 1648.2,48.2 1650.0,47.5 1651.8,48.2"/>
+    <poly id="tree_BR_south_1750" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="1752.5,50.0 1751.8,51.8 1750.0,52.5 1748.2,51.8 1747.5,50.0 1748.2,48.2 1750.0,47.5 1751.8,48.2"/>
+    <poly id="tree_BR_south_1800" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="1802.5,50.0 1801.8,51.8 1800.0,52.5 1798.2,51.8 1797.5,50.0 1798.2,48.2 1800.0,47.5 1801.8,48.2"/>
+    <poly id="bldg_BE_biz_1" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="1960.0,60.0 2080.0,60.0 2080.0,140.0 1960.0,140.0"/>
+    <poly id="bldg_BE_biz_2" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="2105.0,60.0 2225.0,60.0 2225.0,115.0 2190.0,115.0 2190.0,140.0 2105.0,140.0"/>
+    <poly id="bldg_BE_biz_3" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="2250.0,60.0 2360.0,60.0 2360.0,140.0 2250.0,140.0"/>
+    <poly id="bldg_BE_biz_4" type="building" color="0.86,0.89,0.92" layer="2" fill="true" shape="1960.0,170.0 2080.0,170.0 2080.0,250.0 1960.0,250.0"/>
+    <poly id="bldg_BE_biz_5" type="building" color="0.91,0.93,0.95" layer="2" fill="true" shape="2105.0,170.0 2225.0,170.0 2225.0,250.0 2105.0,250.0"/>
+    <poly id="bldg_BE_biz_6" type="building" color="0.88,0.75,0.68" layer="2" fill="true" shape="2250.0,170.0 2360.0,170.0 2360.0,250.0 2250.0,250.0"/>
+    <poly id="bldg_BE_biz_7" type="building" color="0.98,0.98,0.99" layer="2" fill="true" shape="1960.0,275.0 2080.0,275.0 2080.0,350.0 1960.0,350.0"/>
+    <poly id="bldg_BE_biz_8" type="building" color="0.85,0.92,0.98" layer="2" fill="true" shape="2105.0,275.0 2225.0,275.0 2225.0,350.0 2105.0,350.0"/>
+    <poly id="bldg_BE_biz_9" type="building" color="0.95,0.90,0.82" layer="2" fill="true" shape="2250.0,275.0 2360.0,275.0 2360.0,350.0 2250.0,350.0"/>
+    <poly id="garden_BE_prom_1" type="flower_bed" color="0.92,0.42,0.58" layer="2" fill="true" shape="2084.0,80.0 2101.0,80.0 2101.0,130.0 2084.0,130.0"/>
+    <poly id="garden_BE_prom_2" type="flower_bed" color="0.78,0.48,0.85" layer="2" fill="true" shape="2229.0,80.0 2246.0,80.0 2246.0,130.0 2229.0,130.0"/>
+    <poly id="garden_BE_prom_3" type="flower_bed" color="0.96,0.75,0.20" layer="2" fill="true" shape="2084.0,190.0 2101.0,190.0 2101.0,240.0 2084.0,240.0"/>
+    <poly id="garden_BE_prom_4" type="flower_bed" color="0.88,0.28,0.35" layer="2" fill="true" shape="2229.0,190.0 2246.0,190.0 2246.0,240.0 2229.0,240.0"/>
+    <poly id="tree_BE_south_1980" type="tree" color="0.28,0.62,0.32" layer="3" fill="true" shape="1982.5,50.0 1981.8,51.8 1980.0,52.5 1978.2,51.8 1977.5,50.0 1978.2,48.2 1980.0,47.5 1981.8,48.2"/>
+    <poly id="tree_BE_south_2030" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2032.5,50.0 2031.8,51.8 2030.0,52.5 2028.2,51.8 2027.5,50.0 2028.2,48.2 2030.0,47.5 2031.8,48.2"/>
+    <poly id="tree_BE_south_2130" type="tree" color="0.22,0.55,0.28" layer="3" fill="true" shape="2132.5,50.0 2131.8,51.8 2130.0,52.5 2128.2,51.8 2127.5,50.0 2128.2,48.2 2130.0,47.5 2131.8,48.2"/>
+    <poly id="tree_BE_south_2180" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2182.5,50.0 2181.8,51.8 2180.0,52.5 2178.2,51.8 2177.5,50.0 2178.2,48.2 2180.0,47.5 2181.8,48.2"/>
+    <poly id="tree_BE_south_2280" type="tree" color="0.15,0.42,0.18" layer="3" fill="true" shape="2282.5,50.0 2281.8,51.8 2280.0,52.5 2278.2,51.8 2277.5,50.0 2278.2,48.2 2280.0,47.5 2281.8,48.2"/>
+    <poly id="tree_BE_south_2330" type="tree" color="0.18,0.48,0.22" layer="3" fill="true" shape="2332.5,50.0 2331.8,51.8 2330.0,52.5 2328.2,51.8 2327.5,50.0 2328.2,48.2 2330.0,47.5 2331.8,48.2"/>
 </additional>
