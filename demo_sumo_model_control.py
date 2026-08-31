@@ -221,6 +221,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Demo SUMO Model Control")
     parser.add_argument("--gui", action="store_true", help="Launch SUMO GUI window")
     parser.add_argument("--cycles", type=int, default=10, help="Number of decision cycles")
+    parser.add_argument("--multijunction", action="store_true", help="Run multi-junction 2x3 network demo")
+    parser.add_argument("--cfg", type=str, default="sumo/4way.sumocfg", help="SUMO config file path")
     args = parser.parse_args()
 
-    run_demo(gui=args.gui, cycles=args.cycles)
+    if args.multijunction or "multi_junction" in args.cfg:
+        from demo_multijunction_model_control import run_multijunction_demo
+        run_multijunction_demo(gui=args.gui, cycles=args.cycles, cfg_path=args.cfg if "multi_junction" in args.cfg else "sumo/multi_junction.sumocfg")
+    else:
+        run_demo(gui=args.gui, cycles=args.cycles, cfg_path=args.cfg)
