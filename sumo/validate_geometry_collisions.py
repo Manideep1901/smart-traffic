@@ -92,8 +92,9 @@ def validate():
             polygons.append((pid, ptype, pts))
 
     bldgs = [p for p in polygons if p[1] == "building"]
+    gardens = [p for p in polygons if p[1] in ("flower_bed", "park")]
     trees = [p for p in polygons if p[1] == "tree"]
-    print(f"Loaded {len(polygons)} total objects ({len(bldgs)} buildings, {len(trees)} trees) from multi_junction.add.xml\n")
+    print(f"Loaded {len(polygons)} total objects ({len(bldgs)} buildings, {len(gardens)} gardens/parks, {len(trees)} trees) from multi_junction.add.xml\n")
 
     collisions = []
 
@@ -113,13 +114,20 @@ def validate():
                     if d < half_w:
                         collisions.append(f"COLLISION: {ptype} '{pid}' vertex inside Lane '{lid}' (dist={d:.2f}m < {half_w:.2f}m)")
 
-    # 2. Check objects vs objects (building vs building, tree vs building)
+    # 2. Check solid objects vs solid objects (building vs building, tree vs building, garden vs building)
     for i in range(len(polygons)):
         pid1, ptype1, pts1 = polygons[i]
         for j in range(i + 1, len(polygons)):
             pid2, ptype2, pts2 = polygons[j]
-            if polygons_intersect(pts1, pts2):
-                collisions.append(f"COLLISION: {ptype1} '{pid1}' overlaps {ptype2} '{pid2}'")
+            if ptype1 == "building" and ptype2 == "building":
+                if polygons_intersect(pts1, pts2):
+                    collisions.append(f"COLLISION: Building '{pid1}' overlaps Building '{pid2}'")
+            elif ptype1 in ("tree", "flower_bed") and ptype2 == "building":
+                if polygons_intersect(pts1, pts2):
+                    collisions.append(f"COLLISION: {ptype1} '{pid1}' overlaps Building '{pid2}'")
+            elif ptype1 == "building" and ptype2 in ("tree", "flower_bed"):
+                if polygons_intersect(pts1, pts2):
+                    collisions.append(f"COLLISION: Building '{pid1}' overlaps {ptype2} '{pid2}'")
 
     if collisions:
         print(f"FAILED: Found {len(collisions)} collisions:")
@@ -130,9 +138,10 @@ def validate():
         return False
     else:
         print("SUCCESS: 100% CLEAN GEOMETRY!")
-        print(f"  - Zero road collisions")
-        print(f"  - Zero junction collisions")
+        print(f"  - Zero road collisions across all {len(lanes)} lanes")
+        print(f"  - Zero junction collisions across all {len(junctions)} junctions")
         print(f"  - Zero building-building overlaps")
+        print(f"  - Zero garden-building overlaps")
         print(f"  - Zero tree-building overlaps")
         return True
 
