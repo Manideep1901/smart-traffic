@@ -13,6 +13,7 @@ import sys
 import time
 import argparse
 import numpy as np
+import requests
 import traci
 
 
@@ -180,6 +181,10 @@ def run_demo(gui=False, cycles=10, cfg_path="sumo/4way.sumocfg"):
             
             # Step 1: Read and display vehicle counts of EVERY line/approach
             counts = get_lane_counts("C")
+            try:
+                requests.post("http://127.0.0.1:5000/decide", json={"junction": "J1", "counts": counts}, timeout=0.1)
+            except Exception:
+                pass
             print(f"\n1. REAL-TIME VEHICLE COUNTS PER APPROACH:")
             print(f"   -----------------------------------------")
             print(f"   - NORTH Approach (N) : {counts['N']:2d} vehicles")
@@ -220,7 +225,7 @@ def run_demo(gui=False, cycles=10, cfg_path="sumo/4way.sumocfg"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Demo SUMO Model Control")
     parser.add_argument("--gui", action="store_true", help="Launch SUMO GUI window")
-    parser.add_argument("--cycles", type=int, default=10, help="Number of decision cycles")
+    parser.add_argument("--cycles", type=int, default=300, help="Number of decision cycles")
     parser.add_argument("--multijunction", action="store_true", help="Run multi-junction 2x3 network demo")
     parser.add_argument("--cfg", type=str, default="sumo/4way.sumocfg", help="SUMO config file path")
     args = parser.parse_args()

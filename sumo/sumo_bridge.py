@@ -67,22 +67,72 @@ class JunctionControllerState:
         self.current_phase_idx = None
         self.chosen = None
 
-def dir_to_phase(chosen, total_phases=6):
-    """
-    Map direction N/S to NS Green, E/W to EW Green.
-    In 6-phase add.xml: 0=NS Green, 1=NS Yellow, 2=AllRed, 3=EW Green, 4=EW Yellow, 5=AllRed.
-    In 4-phase add.xml: 0=NS Green, 1=AllRed, 2=EW Green, 3=AllRed.
-    """
-    if total_phases == 6:
-        return 0 if chosen in ("N", "S") else 3
-    else:
-        return 0 if chosen in ("N", "S") else 2
+def resolve_tls_phase_maps():
+    phase_maps = {}
+    active_tls = traci.trafficlight.getIDList()
+    for j_id in active_tls:
+        lanes = traci.trafficlight.getControlledLanes(j_id)
+        logics = traci.trafficlight.getAllProgramLogics(j_id)
+        if not logics:
+            phase_maps[j_id] = {"total": 4, "NS_GREEN": 0, "NS_YELLOW": 1, "EW_GREEN": 2, "EW_YELLOW": 3}
+            continue
+        phases = logics[0].phases
+        ns_lanes = set(JUNCTION_LANE_MAP.get(j_id, {}).get("N", []) + JUNCTION_LANE_MAP.get(j_id, {}).get("S", []))
+        ew_lanes = set(JUNCTION_LANE_MAP.get(j_id, {}).get("E", []) + JUNCTION_LANE_MAP.get(j_id, {}).get("W", []))
+        
+        mapping = {"total": len(phases)}
+        for idx, p in enumerate(phases):
+            state = p.state
+            ns_green = any(ln in ns_lanes and state[i] in "Gg" for i, ln in enumerate(lanes))
+            ew_green = any(ln in ew_lanes and state[i] in "Gg" for i, ln in enumerate(lanes))
+            ns_yellow = any(ln in ns_lanes and state[i] in "yY" for i, ln in enumerate(lanes))
+            ew_yellow = any(ln in ew_lanes and state[i] in "yY" for i, ln in enumerate(lanes))
+            
+            if ns_green and not ew_green and "NS_GREEN" not in mapping:
+                mapping["NS_GREEN"] = idx
+            elif ew_green and not ns_green and "EW_GREEN" not in mapping:
+                mapping["EW_GREEN"] = idx
+            elif ns_yellow and not ew_yellow and "NS_YELLOW" not in mapping:
+                mapping["NS_YELLOW"] = idx
+            elif ew_yellow and not ns_yellow and "EW_YELLOW" not in mapping:
+                mapping["EW_YELLOW"] = idx
+        
+        if "NS_GREEN" not in mapping:
+            mapping["NS_GREEN"] = 0
+        if "NS_YELLOW" not in mapping:
+            mapping["NS_YELLOW"] = (mapping["NS_GREEN"] + 1) % mapping["total"]
+        if "EW_GREEN" not in mapping:
+            mapping["EW_GREEN"] = (mapping["NS_YELLOW"] + 1) % mapping["total"]
+        if "EW_YELLOW" not in mapping:
+            mapping["EW_YELLOW"] = (mapping["EW_GREEN"] + 1) % mapping["total"]
+            
+        phase_maps[j_id] = mapping
+    return phase_maps
 
-def get_all_red_phase(current_phase_idx, total_phases=6):
-    if total_phases == 6:
-        return 2 if current_phase_idx in (0, 1) else 5
+def dir_to_phase(j_id, chosen, phase_maps):
+    m = phase_maps.get(j_id, {})
+    if chosen in ("N", "S"):
+        return m.get("NS_GREEN", 0)
     else:
-        return 1 if current_phase_idx == 0 else 3
+        return m.get("EW_GREEN", 2)
+
+def get_yellow_phase(j_id, current_phase_idx, phase_maps):
+    m = phase_maps.get(j_id, {})
+    if current_phase_idx == m.get("NS_GREEN"):
+        return m.get("NS_YELLOW", (current_phase_idx + 1) % m.get("total", 4))
+    elif current_phase_idx == m.get("EW_GREEN"):
+        return m.get("EW_YELLOW", (current_phase_idx + 1) % m.get("total", 4))
+    else:
+        return (current_phase_idx + 1) % m.get("total", 4)
+
+def set_safe_phase(tls_id, phase_idx, duration=None, phase_maps=None):
+    total = phase_maps.get(tls_id, {}).get("total", 4) if phase_maps else 4
+    if not (0 <= phase_idx < total):
+        print(f"[ERROR] TLS {tls_id}: Requested phase {phase_idx} outside range [0, {total - 1}]")
+        phase_idx = max(0, min(total - 1, phase_idx))
+    traci.trafficlight.setPhase(tls_id, phase_idx)
+    if duration is not None:
+        traci.trafficlight.setPhaseDuration(tls_id, float(duration))
 
 def get_lane_counts(j_id):
     lanes = JUNCTION_LANE_MAP.get(j_id, {})
@@ -127,9 +177,11 @@ def run_simulation(sumo_cfg="multi_junction.sumocfg", gui=False, max_steps=20000
     traci.start(sumo_cmd)
     print("SUMO started via TraCI successfully.")
 
-    # Discover active traffic lights
+    # Discover active traffic lights and resolve phase maps
     active_tls = traci.trafficlight.getIDList()
+    phase_maps = resolve_tls_phase_maps()
     print(f"Discovered Traffic Lights in simulation: {active_tls}")
+    print(f"Resolved TLS Phase Maps: {phase_maps}")
 
     states = {tls: JunctionControllerState(tls) for tls in active_tls if tls in JUNCTION_LANE_MAP}
     if not states:
@@ -144,23 +196,18 @@ def run_simulation(sumo_cfg="multi_junction.sumocfg", gui=False, max_steps=20000
         # Step each traffic light junction controller
         for j_id, state in states.items():
             counts = get_lane_counts(j_id)
-            num_phases = len(traci.trafficlight.getAllProgramLogics(j_id)[0].phases) if traci.trafficlight.getAllProgramLogics(j_id) else 6
 
-            # Check if all-red gap active
+            # Check if yellow/clearance gap active
             if state.all_red_active:
                 if sim_time >= state.all_red_end:
                     state.all_red_active = False
                 else:
                     continue
 
-            # Check if green expired -> trigger transition to all-red
+            # Check if green expired -> trigger transition to yellow
             if state.green_active and sim_time >= state.green_end_time:
-                all_red_phase = get_all_red_phase(state.current_phase_idx, num_phases)
-                try:
-                    traci.trafficlight.setPhase(j_id, all_red_phase)
-                    traci.trafficlight.setPhaseDuration(j_id, state.all_red_duration)
-                except Exception:
-                    pass
+                yellow_phase = get_yellow_phase(j_id, state.current_phase_idx, phase_maps)
+                set_safe_phase(j_id, yellow_phase, state.all_red_duration, phase_maps)
                 state.all_red_active = True
                 state.all_red_end = sim_time + state.all_red_duration
                 state.green_active = False
@@ -171,13 +218,9 @@ def run_simulation(sumo_cfg="multi_junction.sumocfg", gui=False, max_steps=20000
                 decision = request_decision(j_id, counts)
                 chosen = decision.get("phase", "N")
                 green = int(decision.get("green", 10))
-                phase_idx = dir_to_phase(chosen, num_phases)
+                phase_idx = dir_to_phase(j_id, chosen, phase_maps)
 
-                try:
-                    traci.trafficlight.setPhase(j_id, phase_idx)
-                    traci.trafficlight.setPhaseDuration(j_id, green)
-                except Exception as ex:
-                    print(f"Error setting phase for {j_id}: {ex}")
+                set_safe_phase(j_id, phase_idx, green, phase_maps)
 
                 state.green_active = True
                 state.green_end_time = sim_time + green
@@ -203,7 +246,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="SUMO Multi-Junction TraCI Bridge")
     parser.add_argument("--cfg", type=str, default="multi_junction.sumocfg", help="SUMO config file (multi_junction.sumocfg or 4way.sumocfg)")
     parser.add_argument("--gui", action="store_true", help="Launch sumo-gui instead of headless sumo")
-    parser.add_argument("--steps", type=int, default=2000, help="Number of simulation steps")
+    parser.add_argument("--steps", type=int, default=200000, help="Number of simulation steps")
     args = parser.parse_args()
 
     run_simulation(sumo_cfg=args.cfg, gui=args.gui, max_steps=args.steps)
